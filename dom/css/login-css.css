@@ -1,0 +1,167 @@
+.login,
+.image {
+    min-height: 100vh;
+}
+
+/* .bg-image {
+        background-image: url('../img/consultas.jpg');
+        background-size: cover;
+        background-position: center center;
+    } */
+
+.buttonLogin {
+    background-color: #30536E !important;
+    border: none !important;
+}
+
+.display-4 {
+    font-weight: bold !important;
+}
+
+.labelRegistro {
+    margin-top: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.panelLogin {
+    background-color: #f8f9fa !important;
+}
+
+.lineaLogin {
+    border: 3px solid green;
+    max-width: 40px;
+    margin: 0px;
+}
+
+.tituloLogin {
+    margin-top: 20px;
+    padding-left: 20px !important;
+}
+
+.panelRegistro {
+    padding: 20px !important;
+}
+
+
+.obligatorio {
+    display: none;
+    font-size: 11px;
+    color: red;
+}
+
+
+.text-design {
+    color: #6c757d !important;
+}
+
+
+@media (min-width: 800px)and (max-width: 1024px) {
+    .display-4 {
+        font-size: 7em;
+        text-align: center;
+
+    }
+
+    .text-design {
+        font-size: 3em;
+        text-align: center;
+        
+    }
+    
+
+    .input-form {
+        font-size: 3em;
+        margin-top: 7%;
+        padding: 70px;
+        height: 90px;
+    }
+
+    .buttonLogin{
+        margin-top: 7%;
+        font-size: 3em;
+    }
+    .labelRegistro{
+        font-size: 3em;
+    }
+    .container {
+        width: 100%;
+        padding: 5% 0% 5% 0%;
+
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+    .form-group{
+        margin-top: 5%;
+    }
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: 100vh;
+        max-width: 100%;
+    }
+    /* #bg-image {
+        background-image: url('../img/consultas.jpg');
+        background-size: cover;
+        background-position: center center;
+    } */
+
+}
+
+@media screen and (min-width: 1025px) {
+    .display-4 {
+        font-size: 3.5em;
+        text-align: left;
+
+    }
+
+    .text-design {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    #bg-image {
+        background-image: url('../img/consultas.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .text-design {
+        font-size: 1.5em;
+        text-align: left;
+
+    }
+    .input-form {
+        font-size: 1.2em;
+
+    }
+
+    .buttonLogin{
+        font-size: 1.2em;
+    }
+    .labelRegistro{
+        font-size: 1.2em;
+    }
+    .container {
+        max-width: 100%;
+
+    }
+
+    .container-login {
+        display: flex !important;
+        min-height: 100vh;
+        align-items: center !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+
+    .panelLogin {
+        margin-top: 0%;
+    }
+}

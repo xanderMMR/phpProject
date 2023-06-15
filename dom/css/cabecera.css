@@ -1,0 +1,49 @@
+#button {
+    padding: 0;
+}
+
+#button li {
+    display: inline;
+}
+
+#button li a {
+    font-family: Arial;
+    font-size: 16px;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    background-color: #002747 !important;
+    color: #fff;
+    border-radius: 10px !important;
+}
+
+#button li a:hover {
+    background-color: #2586d7;
+    margin-top: -2px;
+    padding-bottom: 12px;
+}
+
+/* .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 10px;
+} */
+
+.navbar .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .navbar-toggler {
+    border-color: #fff;
+  }
