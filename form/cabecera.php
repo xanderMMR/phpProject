@@ -27,7 +27,9 @@
             font-size: 2em;
             color: white;
         }
-
+        body{
+                max-width: 100%;
+            }
         @media (min-width: 200px) and (max-width: 1024px) {
             .navbar .navbar-nav {
                 flex-direction: column;
@@ -53,6 +55,7 @@
             .reg{
                 margin-left: 5%;
             }
+           
         }
     </style>
 </head>

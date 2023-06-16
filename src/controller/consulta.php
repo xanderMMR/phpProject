@@ -1520,48 +1520,110 @@ else if( isset($_POST['resumen_municipalidad']) ){
     
         foreach($lista as $r){
          $contador=$contador+1
-    ?>
-            <div class="col-md-3">
-                <div class="row">
-                    <a  href="resumen.php?pre=<?php echo $r['PRESUPUESTO'] ?>&anio=<?php echo $anio ?>&mes=<?php echo $mesActualFiltro ?>&muni=<?php echo $r['MUNICIPALIDAD'] ?>" 
-                        <?php if(!isset($_SESSION['movil'])){ ?>
-                        target="_blank"
-                        <?php } ?>
-                        >
-                        <div class="col-md-12">
-                          <div class="thumbnail" style="height:470px!important;background-image: url('../images/Fondo_Card<?php echo $contador?>.jpg');opacity: 0.8;">
-                            <div class="caption text-center">
-                              <div class="position-relative">
-                                <img src="../dom/img/icono-municipalidad.svg" style="width:72px;height:72px;" />
-                              </div>
-                              <h4 style="color:white;font-weight: bold;font-family:'Zilla Slab',Georgia,'Times New Roman',serif" id="thumbnail-label"><?php echo $r['MUNICIPALIDAD']; ?></h4>
-                              <div class="position-relative" style="color:black!important;background:white!important;border-radius: 10px;font-size:12px!important;padding:5px!important">
-                                  <b>Departamento: </b><?php echo $r['DEPARTAMENTO'] ?>
-                                  ,<b> Provincia: </b><?php echo $r['PROVINCIA'] ?>
-                              </div>
-                            </div>
-                              <div class="caption text-left" style="color:white;font-weight: bold"> 
-                                  <h4><i class="glyphicon glyphicon-file light-red lighter bigger-120"></i>&nbsp;Presupuesto: &nbsp;&nbsp;&nbsp;&nbsp; <?php echo number_format($r['PRESUPUESTO']); ?> </h4>
-                                  <h4><i class="glyphicon glyphicon glyphicon-list-alt light-red lighter bigger-120"></i>&nbsp;Ejecución: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo number_format($r['EJECUCION']); ?></h4>
-                                  <h4><i class="glyphicon glyphicon glyphicon-folder-close light-red lighter bigger-120"></i>&nbsp;Proyectos: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo number_format($r['CANTIDAD']); ?></h4>
-                              </div>
-                            <div class="caption card-footer text-center" style="color:white;font-weight: bold">
-                              <ul class="list-inline"> 
-                                  <h4> <i class="glyphicon glyphicon-signal light-red lighter bigger-120"></i>&nbsp; Avance: </h4>
-                                <li></li>
-                                <h2> <?php echo $r['AVANCE']." %"; ?></h2>                               
-                                <div class="progress">
-                                    <div class="progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $r['AVANCE'] ?>%; background: #D1C01B !important">
-                                    </div>
-                                </div>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                    </a>     
-                </div>
+         ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi página</title>
+    <link rel="stylesheet" href="../../dom/css/consulta.css">
+    <style>
+        .card-header{
+            height: 40%;
+        }
+        .card-body{
+            height: 40%;
+        }
+        .card-body-content{
+            margin-bottom: 7%;
+        }
+    </style>
+</head>
+<body>
+    <div class="col-md-3">
+        
+        <div class="row">
+            <a  target="_blank" href="resumen.php?pre=<?php echo $r['PRESUPUESTO'] ?>&anio=<?php echo $anio ?>&mes=<?php echo $mesActualFiltro ?>&muni=<?php echo $r['MUNICIPALIDAD'] ?>">
+            <div class="col-md-12">
+                
             </div>
-                  
+                <div class="col-md-12">
+                  <div class="thumbnail" style="height:470px!important;background-image: url('../images/Fondo_Card<?php echo $contador?>.jpg');opacity: 0.8;">
+                    <div class="caption text-center card-header">
+                      <div class="position-relative">
+                        <img src="../dom/img/icono-municipalidad.svg" style="width:72px;height:72px;" />
+                      </div>
+                      <h4 style="color:white;font-weight: bold;font-family:'Zilla Slab',Georgia,'Times New Roman',serif" id="thumbnail-label"><?php echo $r['MUNICIPALIDAD']; ?></h4>
+                      <div class="position-relative" style="color:black!important;background:white!important;border-radius: 10px;font-size:12px!important;padding:5px!important">
+                          <b>Departamento: </b><?php echo $r['DEPARTAMENTO'] ?>
+                          ,<b> Provincia: </b><?php echo $r['PROVINCIA'] ?>
+                      </div>
+                    </div>
+                      <div class="caption text-left card-body" style="color:white;font-weight: bold"> 
+                        <h4 class="card-body-content row">
+                            <div class="col-5">
+                                <i class="glyphicon glyphicon-file light-red lighter bigger-120"></i>
+                                &nbsp;Presupuesto: 
+
+                            </div>
+                            <div class="col-7">
+                            
+                                <?php echo number_format($r['PRESUPUESTO']); ?> 
+
+                            </div>
+                            
+
+                        </h4>
+                        <h4 class="card-body-content row">
+                            <div class="col-5">
+                            <i class="glyphicon glyphicon glyphicon-list-alt light-red lighter bigger-120"></i>
+                            &nbsp;Ejecución:  
+
+                            </div>
+                            <div class="col-7">
+                            
+                                <?php echo number_format($r['EJECUCION']); ?>
+
+                            </div>
+                            
+
+                        </h4>
+                        <h4 class="card-body-content row">
+                            <div class="col-5">
+                            <i class="glyphicon glyphicon glyphicon-folder-close light-red lighter bigger-120"></i>
+                            &nbsp;Proyectos:  
+
+                            </div>
+                            <div class="col-7">
+                            
+                            <?php echo number_format($r['CANTIDAD']); ?>
+
+                            </div>
+                            
+
+                        </h4>
+
+                          
+                      </div>
+                    <div class="caption card-footer text-center" style="color:white;font-weight: bold">
+                      <ul class="list-inline"> 
+                          <h4> <i class="glyphicon glyphicon-signal light-red lighter bigger-120"></i>&nbsp; Avance: </h4>
+                        <li></li>
+                        <h2> <?php echo $r['AVANCE']." %"; ?></h2>                               
+                        <div class="progress">
+                            <div class="progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $r['AVANCE'] ?>%; background: #D1C01B !important">
+                            </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </a>     
+        </div>
+    </div>
+    
+</body>
+</html>
+
                                                                     
 <!--            <div class="col-lg-6 d-flex align-items-stretch ftco-animate fadeInUp ftco-animated">
           	<div class="blog-entry d-flex">
