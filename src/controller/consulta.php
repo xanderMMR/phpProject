@@ -27,68 +27,68 @@ $datos = $model->getBaseDatos();
     if($datos!=null){
         ?>
 
-        <table border="1">
-            <tr>
-                <th>A&ntilde;o</th>
-                <th>Tipo Registro</th>
-                <th>Departamento</th>
-                <th>Provincia</th>
-                <th>Municipalidad</th>
-                <th>Funci&oacute;n</th>
-                <th>Divisi&oacute;n Funcional</th>
-                <th>Grupo Funcional</th>
-                <th>Categor&iacute;a Presupuestal</th>
-                <th>Proyecto</th>
-                <th>Fuente</th>
-                <th>Rubro</th>
-                <th>Tipo recurso</th>
-                <th>Gen&eacute;rica</th>
-                <th>Detalle subgen&eacute;rica</th>
-                <th>Espec&iacute;fica</th>
-                <th>Detalle espec&iacute;fica</th>
-                <th>Mes</th>
-                <th>PIA</th>
-                <th>PIM</th>
-                <th>Certificaci&oacute;n</th>
-                <th>Compromiso</th>
-                <th>Atenci&oacute;n</th>
-                <th>Devengado</th>
-                <th>Girado</th>
-                <th>Avance</th>
-            </tr>
-            <?php foreach($datos as $r){ ?>
-            <tr>
-                    <td> <?php echo $r['ANIO']; ?> </td>
-                    <td> <?php echo $r['TIPO_DATO']; ?> </td>
-                    <td> <?php echo $r['DEPARTAMENTO']; ?> </td>
-                    <td> <?php echo $r['PROVINCIA']; ?> </td>
-                    <td> <?php echo $r['MUNICIPALIDAD']; ?> </td>
-                    <td> <?php echo $r['FUNCION']; ?> </td>
-                    <td> <?php echo $r['DIVISION_FUNCIONAL']; ?> </td>
-                    <td> <?php echo $r['GRUPO_FUNCIONAL']; ?> </td>
-                    <td> <?php echo $r['CATEGORIA_PRESUPUESTAL']; ?> </td>
-                    <td> <?php echo $r['PROYECTO']; ?> </td>
-                    <td> <?php echo $r['FUENTE']; ?> </td>
-                    <td> <?php echo $r['RUBRO']; ?> </td>
-                    <td> <?php echo $r['TIPO_RECURSO']; ?> </td>
-                    <td> <?php echo $r['GENERICA']; ?> </td>
-                    <td> <?php echo $r['DETALLE_SUBGENERICA']; ?> </td>
-                    <td> <?php echo $r['ESPECIFICA']; ?> </td>
-                    <td> <?php echo $r['DETALLE_ESPECIFICA']; ?> </td>
-                    <td> <?php echo $r['MES']; ?> </td>
-                    <td> <?php echo $r['PIA']; ?> </td>
-                    <td> <?php echo $r['PIM']; ?> </td>
-                    <td> <?php echo $r['CERTIFICACION']; ?> </td>
-                    <td> <?php echo $r['COMPROMISO']; ?> </td>
-                    <td> <?php echo $r['ATENCION']; ?> </td>
-                    <td> <?php echo $r['DEVENGADO']; ?> </td>
-                    <td> <?php echo $r['GIRADO']; ?> </td>
-                    <td> <?php echo $r['AVANCE']; ?> </td>
-            </tr>
-            <?php }?>
-        </table>
+<table border="1">
+    <tr>
+        <th>A&ntilde;o</th>
+        <th>Tipo Registro</th>
+        <th>Departamento</th>
+        <th>Provincia</th>
+        <th>Municipalidad</th>
+        <th>Funci&oacute;n</th>
+        <th>Divisi&oacute;n Funcional</th>
+        <th>Grupo Funcional</th>
+        <th>Categor&iacute;a Presupuestal</th>
+        <th>Proyecto</th>
+        <th>Fuente</th>
+        <th>Rubro</th>
+        <th>Tipo recurso</th>
+        <th>Gen&eacute;rica</th>
+        <th>Detalle subgen&eacute;rica</th>
+        <th>Espec&iacute;fica</th>
+        <th>Detalle espec&iacute;fica</th>
+        <th>Mes</th>
+        <th>PIA</th>
+        <th>PIM</th>
+        <th>Certificaci&oacute;n</th>
+        <th>Compromiso</th>
+        <th>Atenci&oacute;n</th>
+        <th>Devengado</th>
+        <th>Girado</th>
+        <th>Avance</th>
+    </tr>
+    <?php foreach($datos as $r){ ?>
+    <tr>
+        <td> <?php echo $r['ANIO']; ?> </td>
+        <td> <?php echo $r['TIPO_DATO']; ?> </td>
+        <td> <?php echo $r['DEPARTAMENTO']; ?> </td>
+        <td> <?php echo $r['PROVINCIA']; ?> </td>
+        <td> <?php echo $r['MUNICIPALIDAD']; ?> </td>
+        <td> <?php echo $r['FUNCION']; ?> </td>
+        <td> <?php echo $r['DIVISION_FUNCIONAL']; ?> </td>
+        <td> <?php echo $r['GRUPO_FUNCIONAL']; ?> </td>
+        <td> <?php echo $r['CATEGORIA_PRESUPUESTAL']; ?> </td>
+        <td> <?php echo $r['PROYECTO']; ?> </td>
+        <td> <?php echo $r['FUENTE']; ?> </td>
+        <td> <?php echo $r['RUBRO']; ?> </td>
+        <td> <?php echo $r['TIPO_RECURSO']; ?> </td>
+        <td> <?php echo $r['GENERICA']; ?> </td>
+        <td> <?php echo $r['DETALLE_SUBGENERICA']; ?> </td>
+        <td> <?php echo $r['ESPECIFICA']; ?> </td>
+        <td> <?php echo $r['DETALLE_ESPECIFICA']; ?> </td>
+        <td> <?php echo $r['MES']; ?> </td>
+        <td> <?php echo $r['PIA']; ?> </td>
+        <td> <?php echo $r['PIM']; ?> </td>
+        <td> <?php echo $r['CERTIFICACION']; ?> </td>
+        <td> <?php echo $r['COMPROMISO']; ?> </td>
+        <td> <?php echo $r['ATENCION']; ?> </td>
+        <td> <?php echo $r['DEVENGADO']; ?> </td>
+        <td> <?php echo $r['GIRADO']; ?> </td>
+        <td> <?php echo $r['AVANCE']; ?> </td>
+    </tr>
+    <?php }?>
+</table>
 
-        <?php
+<?php
 
         exit();
     }
@@ -108,75 +108,77 @@ else if( isset($_POST['web_proyectos']) ){
  
     if($lista!=null){
     ?>
-        
+
+<div class="col-md-12">
     <div class="col-md-12">
-        <div class="col-md-12">
-            
-        
+
+
         <div class="table-responsive table-responsive-data2" style="margin-top:0px">
-        <table id="tablaDatosP" class="table table-striped table-bordered" style="width:100%">
-            <thead>
-                <tr style="background-color: #002747">
-                    <th style="font-weight:bold;color:white">N°</th>
-                    <th style="font-weight:bold;color:white" class="text-center">PROYECTO</th>
-                    <th style="font-weight:bold;color:white" class="text-center">PIM</th>
-                    <th style="font-weight:bold;color:white" class="text-center">FORMATO 12B</th>
-                    <th style="font-weight:bold;color:white" class="text-center">FORMATO 7A</th>
-                    <th style="font-weight:bold;color:white" class="text-center">FORMATO 8A</th>
-                </tr>
-            </thead>
+            <table id="tablaDatosP" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr style="background-color: #002747">
+                        <th style="font-weight:bold;color:white">N°</th>
+                        <th style="font-weight:bold;color:white" class="text-center">PROYECTO</th>
+                        <th style="font-weight:bold;color:white" class="text-center">PIM</th>
+                        <th style="font-weight:bold;color:white" class="text-center">FORMATO 12B</th>
+                        <th style="font-weight:bold;color:white" class="text-center">FORMATO 7A</th>
+                        <th style="font-weight:bold;color:white" class="text-center">FORMATO 8A</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <?php $n=1; foreach($lista as $r){ ?>
                     <tr style="height:auto">
-                          <td class="align-middle text-left"> <?php echo $n; ?> </td>          
-                          <td class="align-middle text-left"> <?php echo $r['PROYECTO'] ?> </td>
-                          <td class="align-middle text-left"> <?php echo number_format($r['PIM']) ?> </td>
-                          <td class="align-middle text-center"> 
-                              <?php if($r['A_LINKFORMATO12B']!=""){ ?>
-                                <a href="<?php echo $r['A_LINKFORMATO12B'] ?>" target="_blank">
-                                    <?php echo $r['A_LINKFORMATO12B'] ?>
-                                </a>
-                              <?php } ?>
-                          </td>
-                          <td class="align-middle text-center"> 
-                              <?php if($r['A_LINKFORMATO7']!=""){ ?>
-                                <a href="<?php echo $r['A_LINKFORMATO7'] ?>" target="_blank">
-                                    <?php echo $r['A_LINKFORMATO7'] ?>
-                                </a>
-                              <?php } ?>
-                          </td>
-                          <td class="align-middle text-center"> 
-                              <?php if($r['A_LINKFORMATO8A']!=""){ ?>
-                                <a href="<?php echo $r['A_LINKFORMATO8A'] ?>" target="_blank">
-                                   <?php echo $r['A_LINKFORMATO8A'] ?>
-                                </a>
-                              <?php } ?>
-                          </td>
-                    </tr> 
+                        <td class="align-middle text-left"> <?php echo $n; ?> </td>
+                        <td class="align-middle text-left"> <?php echo $r['PROYECTO'] ?> </td>
+                        <td class="align-middle text-left"> <?php echo number_format($r['PIM']) ?> </td>
+                        <td class="align-middle text-center">
+                            <?php if($r['A_LINKFORMATO12B']!=""){ ?>
+                            <a href="<?php echo $r['A_LINKFORMATO12B'] ?>" target="_blank">
+                                <?php echo $r['A_LINKFORMATO12B'] ?>
+                            </a>
+                            <?php } ?>
+                        </td>
+                        <td class="align-middle text-center">
+                            <?php if($r['A_LINKFORMATO7']!=""){ ?>
+                            <a href="<?php echo $r['A_LINKFORMATO7'] ?>" target="_blank">
+                                <?php echo $r['A_LINKFORMATO7'] ?>
+                            </a>
+                            <?php } ?>
+                        </td>
+                        <td class="align-middle text-center">
+                            <?php if($r['A_LINKFORMATO8A']!=""){ ?>
+                            <a href="<?php echo $r['A_LINKFORMATO8A'] ?>" target="_blank">
+                                <?php echo $r['A_LINKFORMATO8A'] ?>
+                            </a>
+                            <?php } ?>
+                        </td>
+                    </tr>
                     <?php $n++; } ?>
                 </tbody>
 
             </table>
         </div>
-            
-        </div>
-        </div>
-            
-        <script>
-            
-            $(document).ready(function() {
-                $('#tablaDatosP').DataTable( {
-                    "iDisplayLength": 50,  
-                    /* dom: 'frtlp',*/
-                    dom: 'fBrtlp',
-                    buttons: [ {extend: 'excel',text: 'Descargar Excel',className: 'btn-success botonExcelDescarga'} ]
-                } );
-            } );
-            
-        </script>
 
-        
-    <?php
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tablaDatosP').DataTable({
+        "iDisplayLength": 50,
+        /* dom: 'frtlp',*/
+        dom: 'fBrtlp',
+        buttons: [{
+            extend: 'excel',
+            text: 'Descargar Excel',
+            className: 'btn-success botonExcelDescarga'
+        }]
+    });
+});
+</script>
+
+
+<?php
     }
 }
 
@@ -189,13 +191,13 @@ else if( isset($_POST['provincia']) ){
     $lista = $consultaModel->listarProvincia($dpto);
     
     ?>
-        <option value="-1">TODOS</option>
-    <?php
+<option value="-1">TODOS</option>
+<?php
     
     foreach($lista as $r){
         ?>
-        <option><?php echo $r['PROVINCIA']; ?></option>
-        <?php 
+<option><?php echo $r['PROVINCIA']; ?></option>
+<?php 
     }
 }
 
@@ -208,21 +210,21 @@ else if ( isset($_POST['muni']) ){
     $lista = $consultaModel->listarMunicipalidad($dpto,$prov);
     
     ?>
-        <option value="-1">TODOS</option>
-    <?php
+<option value="-1">TODOS</option>
+<?php
     
     foreach($lista as $r){
         ?>
-        <option><?php echo $r['NOMBRE']; ?></option>
-        <?php 
+<option><?php echo $r['NOMBRE']; ?></option>
+<?php 
     }
 }
 
 else if ( isset($_POST['limpiar_muni']) ){
     
     ?>
-      <option value="-1">TODOS</option>  
-    <?php    
+<option value="-1">TODOS</option>
+<?php    
 }
 
 else if (isset($_POST['borrarFiltro'])){
@@ -237,9 +239,13 @@ else if (isset($_POST['borrarFiltro'])){
 
         foreach($_SESSION['filtro_consulta'] as $row){
             ?>
-                <script>document.getElementById("<?php echo $row[2] ?>").disabled=false;</script>
-                <script>document.getElementById("<?php echo $row[3] ?>").style.display='none';</script>
-            <?php
+<script>
+document.getElementById("<?php echo $row[2] ?>").disabled = false;
+</script>
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
+</script>
+<?php
         }
         unset($_SESSION['filtro_consulta']);
     }
@@ -255,9 +261,13 @@ else if (isset($_POST['borrarFiltro'])){
 
         foreach($_SESSION['filtro_actividad'] as $row){
             ?>
-                <script>document.getElementById("<?php echo $row[2] ?>").disabled=false;</script>
-                <script>document.getElementById("<?php echo $row[3] ?>").style.display='none';</script>
-            <?php
+<script>
+document.getElementById("<?php echo $row[2] ?>").disabled = false;
+</script>
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
+</script>
+<?php
         }
         unset($_SESSION['filtro_actividad']);
     }
@@ -393,9 +403,13 @@ else if ( isset($_POST['resultado']) ){
             //    $queryExtra .= " AND ".$coincidencia[0]."='".$coincidencia[1]."'";
             //}
             ?>
-                <script>document.getElementById("<?php echo $coincidencia[2] ?>").disabled=false;</script>
-                <script>document.getElementById("<?php echo $coincidencia[3] ?>").style.display='none';</script>
-            <?php
+<script>
+document.getElementById("<?php echo $coincidencia[2] ?>").disabled = false;
+</script>
+<script>
+document.getElementById("<?php echo $coincidencia[3] ?>").style.display = 'none';
+</script>
+<?php
         }
         
         $ultimo = hallarTipoVista();
@@ -547,18 +561,24 @@ else if ( isset($_POST['resultado']) ){
         foreach($listaFiltros as $row){
             $queryExtra .= " AND ".$row[0]."='".$row[1]."'";
             ?>
-                <script>document.getElementById("<?php echo $row[2] ?>").disabled=true;</script>
-            <?php
+<script>
+document.getElementById("<?php echo $row[2] ?>").disabled = true;
+</script>
+<?php
             
             if($vK==$vTotal){
                 ?>
-                    <script>document.getElementById("<?php echo $row[3] ?>").style.display='block';</script>
-                <?php     
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'block';
+</script>
+<?php     
             }
             else{
                 ?>
-                    <script>document.getElementById("<?php echo $row[3] ?>").style.display='none';</script>
-                <?php 
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
+</script>
+<?php 
             }
             
             $vK++;
@@ -583,18 +603,24 @@ else if ( isset($_POST['resultado']) ){
         foreach($listaFiltros as $row){
             $queryExtra .= " AND ".$row[0]."='".$row[1]."'";
             ?>
-                <script>document.getElementById("<?php echo $row[2] ?>").disabled=true;</script>
-            <?php
+<script>
+document.getElementById("<?php echo $row[2] ?>").disabled = true;
+</script>
+<?php
             
             if($vK==$vTotal){
                 ?>
-                    <script>document.getElementById("<?php echo $row[3] ?>").style.display='block';</script>
-                <?php     
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'block';
+</script>
+<?php     
             }
             else{
                 ?>
-                    <script>document.getElementById("<?php echo $row[3] ?>").style.display='none';</script>
-                <?php 
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
+</script>
+<?php 
             }
             
             $vK++;
@@ -623,8 +649,10 @@ else if ( isset($_POST['resultado']) ){
     $resultado = $consultaModel->getReporte($anio,$dpto,$prov,$muni,$muniFiltrada,$tipoVista,$queryExtra,$mesActualFiltro);
  
     ?>
-      <script> //alert("<?php //echo $resultado[1]; ?>"); </script>
-    <?php  
+<script>
+//alert("<?php //echo $resultado[1]; ?>"); 
+</script>
+<?php  
       
     $lista = $resultado[0];
     
@@ -655,216 +683,259 @@ else if ( isset($_POST['resultado']) ){
         
         
       ?>
-      
-      
-        <div class="col-md-12">
-        <div class="col-md-12">
-        <div class="col-md-12">
-            
-        <div class="col-md-12">&nbsp;</div>    
-          <div class="table-responsive">
 
-          <table border="1" style="width:100%;font-size: 16px;">  
-              <tr style="background: #002747!important;color:white!important">
-                  <td class="text-center"><b>Filtro</b></td>
-                  <td class="text-center"><b>Valor</b></td>
-                  <td class="text-center"><b>PIA</b></td>
-                  <td class="text-center"><b>PIM</b></td>
-                  <td class="text-center"><b>Certificación</b></td>
-                  <td class="text-center"><b>Compromiso Anual</b></td>
-                  <td class="text-center"><b>Atención de compromiso anual</b></td>
-                  <td class="text-center"><b>Devengado</b></td>
-                  <td class="text-center"><b>Girado</b></td>
-                  <td class="text-center"><b>Avance</b></td>
-              </tr>
 
-              <?php foreach($listaKey as $k){ ?>
-              <tr style="background:white;font-size: 14px!important;">
-                  <td><b><?php echo $k->key ?></b></td>
-                  <td><?php echo $k->value ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoA) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoB) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoC) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoD) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoE) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoF) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoG) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoH,1)."%" ?></td>
-              </tr>    
-              <?php } ?>
+<div class="col-md-12">
+    <div class="col-md-12">
+        <div class="col-md-12">
 
-              <?php if(isset($_SESSION['filtro_consulta'])){
+            <div class="col-md-12">&nbsp;</div>
+            <div class="table-responsive">
+
+                <table border="1" style="width:100%;font-size: 16px;">
+                    <tr style="background: #002747!important;color:white!important">
+                        <td class="text-center"><b>Filtro</b></td>
+                        <td class="text-center"><b>Valor</b></td>
+                        <td class="text-center"><b>PIA</b></td>
+                        <td class="text-center"><b>PIM</b></td>
+                        <td class="text-center"><b>Certificación</b></td>
+                        <td class="text-center"><b>Compromiso Anual</b></td>
+                        <td class="text-center"><b>Atención de compromiso anual</b></td>
+                        <td class="text-center"><b>Devengado</b></td>
+                        <td class="text-center"><b>Girado</b></td>
+                        <td class="text-center"><b>Avance</b></td>
+                    </tr>
+
+                    <?php foreach($listaKey as $k){ ?>
+                    <tr style="background:white;font-size: 14px!important;">
+                        <td><b><?php echo $k->key ?></b></td>
+                        <td><?php echo $k->value ?></td>
+                        <td class="text-right"><?php echo number_format($k->atributoA) ?></td>
+                        <td class="text-right"><?php echo number_format($k->atributoB) ?></td>
+                        <td class="text-right"><?php echo number_format($k->atributoC) ?></td>
+                        <td class="text-right"><?php echo number_format($k->atributoD) ?></td>
+                        <td class="text-right"><?php echo number_format($k->atributoE) ?></td>
+                        <td class="text-right"><?php echo number_format($k->atributoF) ?></td>
+                        <td class="text-right"><?php echo number_format($k->atributoG) ?></td>
+                        <td class="text-right"><?php echo number_format($k->atributoH,1)."%" ?></td>
+                    </tr>
+                    <?php } ?>
+
+                    <?php if(isset($_SESSION['filtro_consulta'])){
                       foreach($_SESSION['filtro_consulta'] as $fila){
 
                           if($fila[0]=="MUNICIPALIDAD"){
                               if(!existeKey($listaKey,"MUNICIPALIDAD")){
                                   ?>
-                                  <tr style="background:white;font-size:14px!important">
-                                      <td><b><?php echo $fila[6]; ?></b></td>
-                                      <td><?php echo $fila[1]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][0]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][1]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][2]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][3]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][4]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][5]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][6]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][7]."%"; ?></td>
-                                  </tr>
-                                  <?php
+                    <tr style="background:white;font-size:14px!important">
+                        <td><b><?php echo $fila[6]; ?></b></td>
+                        <td><?php echo $fila[1]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][0]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][1]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][2]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][3]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][4]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][5]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][6]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][7]."%"; ?></td>
+                    </tr>
+                    <?php
                               }
                           }
                           else{
                                ?>
-                               <tr style="background:white;font-size:14px!important">
-                                    <td><b><?php echo $fila[6]; ?></b></td>
-                                    <td><?php echo $fila[1]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][0]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][1]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][2]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][3]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][4]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][5]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][6]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][7]."%"; ?></td>
-                               </tr>
-                               <?php
+                    <tr style="background:white;font-size:14px!important">
+                        <td><b><?php echo $fila[6]; ?></b></td>
+                        <td><?php echo $fila[1]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][0]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][1]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][2]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][3]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][4]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][5]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][6]; ?></td>
+                        <td class="text-right"><?php echo $fila[5][7]."%"; ?></td>
+                    </tr>
+                    <?php
                           }   
                       }
               } ?>
-          </table>
+                </table>
 
-        </div>    
-        <div class="col-md-12">&nbsp;</div>
-        
-      
-        <div class="table-responsive table-responsive-data2">
-            <table id="tablaDatos" class="table table-striped table-bordered" style="width:100%">
-            <thead>
-                    <tr style="background:white!important;border:none!important">
-                        <th colspan="3"> <label style="color:black!important"> TOTALES </label> </th>
-                        
-                        <th class="text-right"> <label style="color:black!important" id="total_PIA"><?php echo number_format($totalPIA); ?></label> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_PIM"><?php echo number_format($totalPIM); ?></label> </th>
-                        <th class="text-right"> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_Certificacion"><?php echo number_format($totalCertificacion); ?></label> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_Compromiso"><?php echo number_format($totalCompromisoAnual); ?></label> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_Atencion"><?php echo number_format($totalCompromisoMensual); ?></label> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_Devengado"><?php echo number_format($totalDevengado); ?></label> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_Girado"><?php echo number_format($totalGirado); ?></label> </th>
-                        <th class="text-right"> </th>
-                    </tr>
-                    <tr style="background-color: #002747;">
-                        <th style="color:black;font-weight:bold"></th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" align="center">N°</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center"> 
-                            <?php echo $textoCabecera ?>
-                            <input type="hidden" id="ultimaColumna" style="color:black!important" value="<?php echo $ultimaBusqueda ?>"> 
-                        </th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">PIA</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">PIM</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center"> % PIM</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Certificación</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Compromiso Anual</th>           
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Atención de compromiso anual</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Devengado</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Girado</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Avance de Ejecución %</th>
-                    </tr>
-                </thead>
-            <tbody>
+            </div>
+            <div class="col-md-12">&nbsp;</div>
+
+
+            <div class="table-responsive table-responsive-data2">
+                <table id="tablaDatos" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr style="background:white!important;border:none!important">
+                            <th colspan="3"> <label style="color:black!important"> TOTALES </label> </th>
+
+                            <th class="text-right"> <label style="color:black!important"
+                                    id="total_PIA"><?php echo number_format($totalPIA); ?></label> </th>
+                            <th class="text-right"> <label style="color:black!important"
+                                    id="total_PIM"><?php echo number_format($totalPIM); ?></label> </th>
+                            <th class="text-right"> </th>
+                            <th class="text-right"> <label style="color:black!important"
+                                    id="total_Certificacion"><?php echo number_format($totalCertificacion); ?></label>
+                            </th>
+                            <th class="text-right"> <label style="color:black!important"
+                                    id="total_Compromiso"><?php echo number_format($totalCompromisoAnual); ?></label>
+                            </th>
+                            <th class="text-right"> <label style="color:black!important"
+                                    id="total_Atencion"><?php echo number_format($totalCompromisoMensual); ?></label>
+                            </th>
+                            <th class="text-right"> <label style="color:black!important"
+                                    id="total_Devengado"><?php echo number_format($totalDevengado); ?></label> </th>
+                            <th class="text-right"> <label style="color:black!important"
+                                    id="total_Girado"><?php echo number_format($totalGirado); ?></label> </th>
+                            <th class="text-right"> </th>
+                        </tr>
+                        <tr style="background-color: #002747;">
+                            <th style="color:black;font-weight:bold"></th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                align="center">N°</th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                class="text-center">
+                                <?php echo $textoCabecera ?>
+                                <input type="hidden" id="ultimaColumna" style="color:black!important"
+                                    value="<?php echo $ultimaBusqueda ?>">
+                            </th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                class="text-center">PIA</th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                class="text-center">PIM</th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                class="text-center"> % PIM</th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                class="text-center">Certificación</th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                class="text-center">Compromiso Anual</th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                class="text-center">Atención de compromiso anual</th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                class="text-center">Devengado</th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                class="text-center">Girado</th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                                class="text-center">Avance de Ejecución %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                         <?php $n=1; foreach($lista as $r){ ?>
-                          <tr style="height:auto">
+                        <tr style="height:auto">
                             <td>
-                                <input type="radio" data-num="<?php echo $n ?>" data-name="<?php echo $r['CAMPO']; ?>" name="radioGrupo" value="<?php echo $r['CAMPO']; ?>">
+                                <input type="radio" data-num="<?php echo $n ?>" data-name="<?php echo $r['CAMPO']; ?>"
+                                    name="radioGrupo" value="<?php echo $r['CAMPO']; ?>">
                             </td>
-                            <td class="align-middle text-left"> <?php echo $n; ?> </td>          
+                            <td class="align-middle text-left"> <?php echo $n; ?> </td>
                             <td class="align-middle text-left"> <?php echo $r['CAMPO'] ?> </td>
                             <td class="align-middle text-right">
-                                <input type="hidden" id="pia_<?php echo $n?>" value="<?php echo number_format($r['PIA']); ?>"/>
-                                <?php echo number_format($r['PIA']); ?> 
-                            </td>
-                            <td class="align-middle text-right"> 
-                                <input type="hidden" id="pim_<?php echo $n?>" value="<?php echo number_format($r['PIM']); ?>"/>
-                                <?php echo number_format($r['PIM']); ?> 
-                            </td>
-                            <td class="align-middle text-right"> 
-                                <?php if($totalPIM>0) echo number_format( ($r['PIM']*100/$totalPIM) ,2 )."%"; else 0;  ?> 
-                            </td>
-                            <td class="align-middle text-right"> 
-                                <input type="hidden" id="certificacion_<?php echo $n?>" value="<?php echo number_format($r['CERTIFICACION']); ?>"/>
-                                <?php echo number_format($r['CERTIFICACION']); ?> 
+                                <input type="hidden" id="pia_<?php echo $n?>"
+                                    value="<?php echo number_format($r['PIA']); ?>" />
+                                <?php echo number_format($r['PIA']); ?>
                             </td>
                             <td class="align-middle text-right">
-                                <input type="hidden" id="compromiso_<?php echo $n?>" value="<?php echo number_format($r['COMPROMISO']); ?>"/>
-                                <?php echo number_format($r['COMPROMISO']); ?> 
+                                <input type="hidden" id="pim_<?php echo $n?>"
+                                    value="<?php echo number_format($r['PIM']); ?>" />
+                                <?php echo number_format($r['PIM']); ?>
                             </td>
-                            <td class="align-middle text-right"> 
-                                <input type="hidden" id="atencion_<?php echo $n?>" value="<?php echo number_format($r['ATENCION']); ?>"/>
-                                <?php echo number_format($r['ATENCION']); ?> 
+                            <td class="align-middle text-right">
+                                <?php if($totalPIM>0) echo number_format( ($r['PIM']*100/$totalPIM) ,2 )."%"; else 0;  ?>
                             </td>
-                            <td class="align-middle text-right"> 
-                                <input type="hidden" id="devengado_<?php echo $n?>" value="<?php echo number_format($r['DEVENGADO']); ?>"/>
-                                <?php echo number_format($r['DEVENGADO']); ?> 
+                            <td class="align-middle text-right">
+                                <input type="hidden" id="certificacion_<?php echo $n?>"
+                                    value="<?php echo number_format($r['CERTIFICACION']); ?>" />
+                                <?php echo number_format($r['CERTIFICACION']); ?>
                             </td>
-                            <td class="align-middle text-right"> 
-                                <input type="hidden" id="girado_<?php echo $n?>" value="<?php echo number_format($r['GIRADO']); ?>"/>
-                                <?php echo number_format($r['GIRADO']); ?> 
+                            <td class="align-middle text-right">
+                                <input type="hidden" id="compromiso_<?php echo $n?>"
+                                    value="<?php echo number_format($r['COMPROMISO']); ?>" />
+                                <?php echo number_format($r['COMPROMISO']); ?>
                             </td>
-                            <td class="align-middle text-right"> 
-                                <input type="hidden" id="avance_<?php echo $n?>" value="<?php echo number_format($r['AVANCE'],1); ?>"/>
-                                <?php echo number_format($r['AVANCE'],1); ?> 
-                            </td> 
-                          </tr> 
+                            <td class="align-middle text-right">
+                                <input type="hidden" id="atencion_<?php echo $n?>"
+                                    value="<?php echo number_format($r['ATENCION']); ?>" />
+                                <?php echo number_format($r['ATENCION']); ?>
+                            </td>
+                            <td class="align-middle text-right">
+                                <input type="hidden" id="devengado_<?php echo $n?>"
+                                    value="<?php echo number_format($r['DEVENGADO']); ?>" />
+                                <?php echo number_format($r['DEVENGADO']); ?>
+                            </td>
+                            <td class="align-middle text-right">
+                                <input type="hidden" id="girado_<?php echo $n?>"
+                                    value="<?php echo number_format($r['GIRADO']); ?>" />
+                                <?php echo number_format($r['GIRADO']); ?>
+                            </td>
+                            <td class="align-middle text-right">
+                                <input type="hidden" id="avance_<?php echo $n?>"
+                                    value="<?php echo number_format($r['AVANCE'],1); ?>" />
+                                <?php echo number_format($r['AVANCE'],1); ?>
+                            </td>
+                        </tr>
                         <?php $n++; } ?>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        </div>
-        </div>    
-        </div>
-      
-        <script>
-          $(document).ready(function() {
-              $('#tablaDatos').DataTable( {
-                "iDisplayLength": 50,  
-                dom: 'fBrtlp',
-                              buttons: [ {extend: 'excel',text: 'Descargar Excel',className: 'btn-success botonExcelDescarga'} ]
-              } );
-          } );
+    </div>
+</div>
 
-          (function () {
-              $(".wrapper1").scroll(function () {
-                  $(".wrapper2")
-                          .scrollLeft($(".wrapper1").scrollLeft());
-              });
-              $(".wrapper2").scroll(function () {
-                  $(".wrapper1")
-                          .scrollLeft($(".wrapper2").scrollLeft());
-              });
-          });
-      </script>
-     
-    <?php  
+<script>
+$(document).ready(function() {
+    $('#tablaDatos').DataTable({
+        "iDisplayLength": 50,
+        dom: 'fBrtlp',
+        buttons: [{
+            extend: 'excel',
+            text: 'Descargar Excel',
+            className: 'btn-success botonExcelDescarga'
+        }]
+    });
+});
+
+(function() {
+    $(".wrapper1").scroll(function() {
+        $(".wrapper2")
+            .scrollLeft($(".wrapper1").scrollLeft());
+    });
+    $(".wrapper2").scroll(function() {
+        $(".wrapper1")
+            .scrollLeft($(".wrapper2").scrollLeft());
+    });
+});
+</script>
+
+<?php  
     }
     else{
     ?>
 
-    <div class="col-md-12">  
-    <div class="col-md-6" style="margin-top:10px!important">                                                                
-        <div class="alert alert-danger" role="alert" style="background:#F76744!important;color:white!important;font-size:18px!important">
+<div class="col-md-12">
+    <div class="col-md-6" style="margin-top:10px!important">
+        <div class="alert alert-danger" role="alert"
+            style="background:#F76744!important;color:white!important;font-size:18px!important">
             No se encontraron resultados
         </div>
-    </div>    
-    </div>    
-        
-    <?php }
+    </div>
+</div>
+
+<?php }
     
     ?>
-       <script> $("#divBloque1").show(); $("#divBloque2").show(); $("#divBloque3").show(); $("#divBloque4").show(); </script>
-       <script> $("#divTipoRecurso").show();</script>
-     
-    <?php  
+<script>
+$("#divBloque1").show();
+$("#divBloque2").show();
+$("#divBloque3").show();
+$("#divBloque4").show();
+</script>
+<script>
+$("#divTipoRecurso").show();
+</script>
+
+<?php  
 } 
 
 
@@ -995,9 +1066,13 @@ else if ( isset($_POST['resultado_actividad']) ){
         if($coincidencia!=null){
             
             ?>
-                <script>document.getElementById("<?php echo $coincidencia[2] ?>").disabled=false;</script>
-                <script>document.getElementById("<?php echo $coincidencia[3] ?>").style.display='none';</script>
-            <?php
+<script>
+document.getElementById("<?php echo $coincidencia[2] ?>").disabled = false;
+</script>
+<script>
+document.getElementById("<?php echo $coincidencia[3] ?>").style.display = 'none';
+</script>
+<?php
         }
         
         $ultimo = hallarTipoVistaActividad();
@@ -1062,18 +1137,24 @@ else if ( isset($_POST['resultado_actividad']) ){
         foreach($listaFiltros as $row){
             $queryExtra .= " AND ".$row[0]."='".$row[1]."'";
             ?>
-                <script>document.getElementById("<?php echo $row[2] ?>").disabled=true;</script>
-            <?php
+<script>
+document.getElementById("<?php echo $row[2] ?>").disabled = true;
+</script>
+<?php
             
             if($vK==$vTotal){
                 ?>
-                    <script>document.getElementById("<?php echo $row[3] ?>").style.display='block';</script>
-                <?php     
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'block';
+</script>
+<?php     
             }
             else{
                 ?>
-                    <script>document.getElementById("<?php echo $row[3] ?>").style.display='none';</script>
-                <?php 
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
+</script>
+<?php 
             }
             
             $vK++;
@@ -1093,18 +1174,24 @@ else if ( isset($_POST['resultado_actividad']) ){
         foreach($listaFiltros as $row){
             $queryExtra .= " AND ".$row[0]."='".$row[1]."'";
             ?>
-                <script>document.getElementById("<?php echo $row[2] ?>").disabled=true;</script>
-            <?php
+<script>
+document.getElementById("<?php echo $row[2] ?>").disabled = true;
+</script>
+<?php
             
             if($vK==$vTotal){
                 ?>
-                    <script>document.getElementById("<?php echo $row[3] ?>").style.display='block';</script>
-                <?php     
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'block';
+</script>
+<?php     
             }
             else{
                 ?>
-                    <script>document.getElementById("<?php echo $row[3] ?>").style.display='none';</script>
-                <?php 
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
+</script>
+<?php 
             }
             
             $vK++;
@@ -1126,8 +1213,10 @@ else if ( isset($_POST['resultado_actividad']) ){
     $resultado = $consultaModel->getReporteActividad($anio,$dpto,$prov,$muni,$muniFiltrada,$tipoVista,$queryExtra,$mesActualFiltro);
  
     ?>
-      <script> //alert("<?php //echo $resultado[1]; ?>"); </script>
-    <?php  
+<script>
+//alert("<?php //echo $resultado[1]; ?>"); 
+</script>
+<?php  
       
     $lista = $resultado[0];
     
@@ -1157,213 +1246,253 @@ else if ( isset($_POST['resultado_actividad']) ){
         
         
       ?>
-      
-        <div class="col-md-12">
-        <div class="col-md-12">
-            
-        <div class="col-md-12">&nbsp;</div>    
-          <div class="table-responsive">
 
-          <table border="1" style="width:100%;font-size: 16px;">  
-              <tr style="background: #002747!important;color:white!important">
-                  <td class="text-center"><b>Filtro</b></td>
-                  <td class="text-center"><b>Valor</b></td>
-                  <td class="text-center"><b>PIA</b></td>
-                  <td class="text-center"><b>PIM</b></td>
-                  <td class="text-center"><b>Certificación</b></td>
-                  <td class="text-center"><b>Compromiso Anual</b></td>
-                  <td class="text-center"><b>Atención de compromiso anual</b></td>
-                  <td class="text-center"><b>Devengado</b></td>
-                  <td class="text-center"><b>Girado</b></td>
-                  <td class="text-center"><b>Avance</b></td>
-              </tr>
+<div class="col-md-12">
+    <div class="col-md-12">
 
-              <?php foreach($listaKey as $k){ ?>
-              <tr style="background:white;font-size: 14px;">
-                  <td><b><?php echo $k->key ?></b></td>
-                  <td><?php echo $k->value ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoA) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoB) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoC) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoD) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoE) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoF) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoG) ?></td>
-                  <td class="text-right"><?php echo number_format($k->atributoH,1)."%" ?></td>
-              </tr>    
-              <?php } ?>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="table-responsive">
 
-              <?php if(isset($_SESSION['filtro_actividad'])){
+            <table border="1" style="width:100%;font-size: 16px;">
+                <tr style="background: #002747!important;color:white!important">
+                    <td class="text-center"><b>Filtro</b></td>
+                    <td class="text-center"><b>Valor</b></td>
+                    <td class="text-center"><b>PIA</b></td>
+                    <td class="text-center"><b>PIM</b></td>
+                    <td class="text-center"><b>Certificación</b></td>
+                    <td class="text-center"><b>Compromiso Anual</b></td>
+                    <td class="text-center"><b>Atención de compromiso anual</b></td>
+                    <td class="text-center"><b>Devengado</b></td>
+                    <td class="text-center"><b>Girado</b></td>
+                    <td class="text-center"><b>Avance</b></td>
+                </tr>
+
+                <?php foreach($listaKey as $k){ ?>
+                <tr style="background:white;font-size: 14px;">
+                    <td><b><?php echo $k->key ?></b></td>
+                    <td><?php echo $k->value ?></td>
+                    <td class="text-right"><?php echo number_format($k->atributoA) ?></td>
+                    <td class="text-right"><?php echo number_format($k->atributoB) ?></td>
+                    <td class="text-right"><?php echo number_format($k->atributoC) ?></td>
+                    <td class="text-right"><?php echo number_format($k->atributoD) ?></td>
+                    <td class="text-right"><?php echo number_format($k->atributoE) ?></td>
+                    <td class="text-right"><?php echo number_format($k->atributoF) ?></td>
+                    <td class="text-right"><?php echo number_format($k->atributoG) ?></td>
+                    <td class="text-right"><?php echo number_format($k->atributoH,1)."%" ?></td>
+                </tr>
+                <?php } ?>
+
+                <?php if(isset($_SESSION['filtro_actividad'])){
                       foreach($_SESSION['filtro_actividad'] as $fila){
 
                           if($fila[0]=="MUNICIPALIDAD"){
                               if(!existeKey($listaKey,"MUNICIPALIDAD")){
                                   ?>
-                                  <tr style="background:white;font-size: 14px;">
-                                      <td><b><?php echo $fila[6]; ?></b></td>
-                                      <td><?php echo $fila[1]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][0]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][1]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][2]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][3]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][4]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][5]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][6]; ?></td>
-                                      <td class="text-right"><?php echo $fila[5][7]."%"; ?></td>
-                                  </tr>
-                                  <?php
+                <tr style="background:white;font-size: 14px;">
+                    <td><b><?php echo $fila[6]; ?></b></td>
+                    <td><?php echo $fila[1]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][0]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][1]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][2]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][3]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][4]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][5]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][6]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][7]."%"; ?></td>
+                </tr>
+                <?php
                               }
                           }
                           else{
                                ?>
-                               <tr style="background:white;font-size: 14px;">
-                                    <td><b><?php echo $fila[6]; ?></b></td>
-                                    <td><?php echo $fila[1]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][0]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][1]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][2]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][3]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][4]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][5]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][6]; ?></td>
-                                    <td class="text-right"><?php echo $fila[5][7]."%"; ?></td>
-                               </tr>
-                               <?php
+                <tr style="background:white;font-size: 14px;">
+                    <td><b><?php echo $fila[6]; ?></b></td>
+                    <td><?php echo $fila[1]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][0]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][1]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][2]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][3]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][4]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][5]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][6]; ?></td>
+                    <td class="text-right"><?php echo $fila[5][7]."%"; ?></td>
+                </tr>
+                <?php
                           }   
                       }
               } ?>
-          </table>
+            </table>
 
-        </div>    
+        </div>
         <div class="col-md-12">&nbsp;</div>
-      
-      
+
+
         <div class="table-responsive table-responsive-data2">
             <table id="tablaDatos" class="table table-striped table-bordered" style="width:100%">
-            <thead>
+                <thead>
                     <tr style="background:white!important;border:none!important">
                         <th colspan="3"> <label style="color:black!important"> TOTALES </label> </th>
-                        
-                        <th class="text-right"> <label style="color:black!important" id="total_PIA"><?php echo number_format($totalPIA); ?></label> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_PIM"><?php echo number_format($totalPIM); ?></label> </th>
+
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_PIA"><?php echo number_format($totalPIA); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_PIM"><?php echo number_format($totalPIM); ?></label> </th>
                         <th class="text-right"> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_Certificacion"><?php echo number_format($totalCertificacion); ?></label> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_Compromiso"><?php echo number_format($totalCompromisoAnual); ?></label> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_Atencion"><?php echo number_format($totalCompromisoMensual); ?></label> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_Devengado"><?php echo number_format($totalDevengado); ?></label> </th>
-                        <th class="text-right"> <label style="color:black!important" id="total_Girado"><?php echo number_format($totalGirado); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_Certificacion"><?php echo number_format($totalCertificacion); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_Compromiso"><?php echo number_format($totalCompromisoAnual); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_Atencion"><?php echo number_format($totalCompromisoMensual); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_Devengado"><?php echo number_format($totalDevengado); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_Girado"><?php echo number_format($totalGirado); ?></label> </th>
                         <th class="text-right"> </th>
                     </tr>
                     <tr style="background-color: #002747;">
                         <th style="color:black;font-weight:bold"></th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" align="center">N°</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center"> 
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            align="center">N°</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            class="text-center">
                             <?php echo $textoCabecera ?>
-                            <input type="hidden" id="ultimaColumna" style="color:black!important" value="<?php echo $ultimaBusqueda ?>"> 
+                            <input type="hidden" id="ultimaColumna" style="color:black!important"
+                                value="<?php echo $ultimaBusqueda ?>">
                         </th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">PIA</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">PIM</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center"> % PIM</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Certificación</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Compromiso Anual</th>           
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Atención de compromiso anual</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Devengado</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Girado</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Avance de Ejecución %</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            class="text-center">PIA</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            class="text-center">PIM</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            class="text-center"> % PIM</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            class="text-center">Certificación</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            class="text-center">Compromiso Anual</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            class="text-center">Atención de compromiso anual</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            class="text-center">Devengado</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            class="text-center">Girado</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            class="text-center">Avance de Ejecución %</th>
                     </tr>
                 </thead>
-            <tbody>
-                        <?php $n=1; foreach($lista as $r){ ?>
-                          <tr style="height:auto">
-                                <td>
-                                    <input type="radio" data-num="<?php echo $n ?>" data-name="<?php echo $r['CAMPO']; ?>" name="radioGrupo" value="<?php echo $r['CAMPO']; ?>">
-                                </td>
-                                <td class="align-middle text-left"> <?php echo $n; ?> </td>          
-                                <td class="align-middle text-left"> <?php echo $r['CAMPO'] ?> </td>
-                                <td class="align-middle text-right"> 
-                                    <input type="hidden" id="pia_<?php echo $n?>" value="<?php echo number_format($r['PIA']); ?>"/>
-                                    <?php echo number_format($r['PIA']); ?> 
-                                </td>
-                                <td class="align-middle text-right"> 
-                                    <input type="hidden" id="pim_<?php echo $n?>" value="<?php echo number_format($r['PIM']); ?>"/>
-                                    <?php echo number_format($r['PIM']); ?> 
-                                </td>
-                                <td class="align-middle text-right"> 
-                                    <?php if($totalPIM>0) echo number_format( ($r['PIM']*100/$totalPIM) ,2 )."%"; else 0;  ?> 
-                                </td>
-                                <td class="align-middle text-right"> 
-                                    <input type="hidden" id="certificacion_<?php echo $n?>" value="<?php echo number_format($r['CERTIFICACION']); ?>"/>
-                                    <?php echo number_format($r['CERTIFICACION']); ?> 
-                                </td>
-                                <td class="align-middle text-right"> 
-                                    <input type="hidden" id="compromiso_<?php echo $n?>" value="<?php echo number_format($r['COMPROMISO']); ?>"/>
-                                    <?php echo number_format($r['COMPROMISO']); ?> 
-                                </td>
-                                <td class="align-middle text-right"> 
-                                    <input type="hidden" id="atencion_<?php echo $n?>" value="<?php echo number_format($r['ATENCION']); ?>"/>
-                                    <?php echo number_format($r['ATENCION']); ?> 
-                                </td>
-                                <td class="align-middle text-right"> 
-                                    <input type="hidden" id="devengado_<?php echo $n?>" value="<?php echo number_format($r['DEVENGADO']); ?>"/>
-                                    <?php echo number_format($r['DEVENGADO']); ?> 
-                                </td>
-                                <td class="align-middle text-right"> 
-                                    <input type="hidden" id="girado_<?php echo $n?>" value="<?php echo number_format($r['GIRADO']); ?>"/>
-                                    <?php echo number_format($r['GIRADO']); ?> 
-                                </td>
-                                <td class="align-middle text-right"> 
-                                    <input type="hidden" id="avance_<?php echo $n?>" value="<?php echo number_format($r['AVANCE'],1); ?>"/>
-                                    <?php echo number_format($r['AVANCE'],1); ?> 
-                                </td> 
-                          </tr> 
-                        <?php $n++; } ?>
+                <tbody>
+                    <?php $n=1; foreach($lista as $r){ ?>
+                    <tr style="height:auto">
+                        <td>
+                            <input type="radio" data-num="<?php echo $n ?>" data-name="<?php echo $r['CAMPO']; ?>"
+                                name="radioGrupo" value="<?php echo $r['CAMPO']; ?>">
+                        </td>
+                        <td class="align-middle text-left"> <?php echo $n; ?> </td>
+                        <td class="align-middle text-left"> <?php echo $r['CAMPO'] ?> </td>
+                        <td class="align-middle text-right">
+                            <input type="hidden" id="pia_<?php echo $n?>"
+                                value="<?php echo number_format($r['PIA']); ?>" />
+                            <?php echo number_format($r['PIA']); ?>
+                        </td>
+                        <td class="align-middle text-right">
+                            <input type="hidden" id="pim_<?php echo $n?>"
+                                value="<?php echo number_format($r['PIM']); ?>" />
+                            <?php echo number_format($r['PIM']); ?>
+                        </td>
+                        <td class="align-middle text-right">
+                            <?php if($totalPIM>0) echo number_format( ($r['PIM']*100/$totalPIM) ,2 )."%"; else 0;  ?>
+                        </td>
+                        <td class="align-middle text-right">
+                            <input type="hidden" id="certificacion_<?php echo $n?>"
+                                value="<?php echo number_format($r['CERTIFICACION']); ?>" />
+                            <?php echo number_format($r['CERTIFICACION']); ?>
+                        </td>
+                        <td class="align-middle text-right">
+                            <input type="hidden" id="compromiso_<?php echo $n?>"
+                                value="<?php echo number_format($r['COMPROMISO']); ?>" />
+                            <?php echo number_format($r['COMPROMISO']); ?>
+                        </td>
+                        <td class="align-middle text-right">
+                            <input type="hidden" id="atencion_<?php echo $n?>"
+                                value="<?php echo number_format($r['ATENCION']); ?>" />
+                            <?php echo number_format($r['ATENCION']); ?>
+                        </td>
+                        <td class="align-middle text-right">
+                            <input type="hidden" id="devengado_<?php echo $n?>"
+                                value="<?php echo number_format($r['DEVENGADO']); ?>" />
+                            <?php echo number_format($r['DEVENGADO']); ?>
+                        </td>
+                        <td class="align-middle text-right">
+                            <input type="hidden" id="girado_<?php echo $n?>"
+                                value="<?php echo number_format($r['GIRADO']); ?>" />
+                            <?php echo number_format($r['GIRADO']); ?>
+                        </td>
+                        <td class="align-middle text-right">
+                            <input type="hidden" id="avance_<?php echo $n?>"
+                                value="<?php echo number_format($r['AVANCE'],1); ?>" />
+                            <?php echo number_format($r['AVANCE'],1); ?>
+                        </td>
+                    </tr>
+                    <?php $n++; } ?>
                 </tbody>
             </table>
         </div>
-    
-        </div>
-        </div>    
-      
-        <script>
-          $(document).ready(function() {
-              $('#tablaDatos').DataTable( {
-                  "iDisplayLength": 50,  
-                  dom: 'fBrtlp',
-                              buttons: [ {extend: 'excel',text: 'Descargar Excel',className: 'btn-success botonExcelDescarga'} ]
-              } );
-          } );
 
-          (function () {
-              $(".wrapper1").scroll(function () {
-                  $(".wrapper2")
-                          .scrollLeft($(".wrapper1").scrollLeft());
-              });
-              $(".wrapper2").scroll(function () {
-                  $(".wrapper1")
-                          .scrollLeft($(".wrapper2").scrollLeft());
-              });
-          });
-      </script>
-      
-    <?php  
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tablaDatos').DataTable({
+        "iDisplayLength": 50,
+        dom: 'fBrtlp',
+        buttons: [{
+            extend: 'excel',
+            text: 'Descargar Excel',
+            className: 'btn-success botonExcelDescarga'
+        }]
+    });
+});
+
+(function() {
+    $(".wrapper1").scroll(function() {
+        $(".wrapper2")
+            .scrollLeft($(".wrapper1").scrollLeft());
+    });
+    $(".wrapper2").scroll(function() {
+        $(".wrapper1")
+            .scrollLeft($(".wrapper2").scrollLeft());
+    });
+});
+</script>
+
+<?php  
     }
     else{
     ?>
 
-    <div class="col-md-12">  
-    <div class="col-md-6" style="margin-top:10px!important">                                                                
-        <div class="alert alert-danger" role="alert" style="background:#F76744!important;color:white!important;font-size:18px!important">
+<div class="col-md-12">
+    <div class="col-md-6" style="margin-top:10px!important">
+        <div class="alert alert-danger" role="alert"
+            style="background:#F76744!important;color:white!important;font-size:18px!important">
             No se encontraron resultados
         </div>
-    </div>    
-    </div>    
-        
-    <?php }
+    </div>
+</div>
+
+<?php }
       
     ?>
-        <script> $("#divBloque1").hide(); $("#divBloque2").show(); $("#divBloque3").hide(); $("#divBloque4").hide(); </script>
-        <script> $("#divTipoRecurso").hide();</script>
-    <?php
+<script>
+$("#divBloque1").hide();
+$("#divBloque2").show();
+$("#divBloque3").hide();
+$("#divBloque4").hide();
+</script>
+<script>
+$("#divTipoRecurso").hide();
+</script>
+<?php
 } 
 
 
@@ -1388,16 +1517,17 @@ else if ( isset($_POST['resultado_proyecto']) ){
     if($lista==null){
         
         ?>
-            
-        <div class="col-md-12">
-        <div class="col-md-6" style="margin-top:10px!important">                                                                
-            <div class="alert alert-danger" role="alert" style="background:#F76744!important;color:white!important;font-size:18px!important">
-                No se encontraron resultados
-            </div>
-        </div> 
-        </div> 
-        
-        <?php
+
+<div class="col-md-12">
+    <div class="col-md-6" style="margin-top:10px!important">
+        <div class="alert alert-danger" role="alert"
+            style="background:#F76744!important;color:white!important;font-size:18px!important">
+            No se encontraron resultados
+        </div>
+    </div>
+</div>
+
+<?php
     }
     else{
         
@@ -1421,83 +1551,97 @@ else if ( isset($_POST['resultado_proyecto']) ){
         }
         
         ?>
-        
-        <div class="col-md-12">
-        <div class="col-md-12">
-            
-        
-        <div class="table-responsive table-responsive-data2" style="margin-top:40px">
-        <table id="tablaDatos" class="table table-striped table-bordered" style="width:100%">
-            <thead>
-                <tr style="background:white!important;border:none!important">
-                    <th colspan="3"> <label style="color:black!important"> TOTALES </label> </th>
 
-                    <th class="text-right"> <label style="color:black!important" id="total_PIA"><?php echo number_format($totalPIA); ?></label> </th>
-                    <th class="text-right"> <label style="color:black!important" id="total_PIM"><?php echo number_format($totalPIM); ?></label> </th>
-                    <th class="text-right"> <label style="color:black!important" id="total_Certificacion"><?php echo number_format($totalCertificacion); ?></label> </th>
-                    <th class="text-right"> <label style="color:black!important" id="total_Compromiso"><?php echo number_format($totalCompromisoAnual); ?></label> </th>
-                    <th class="text-right"> <label style="color:black!important" id="total_Atencion"><?php echo number_format($totalCompromisoMensual); ?></label> </th>
-                    <th class="text-right"> <label style="color:black!important" id="total_Devengado"><?php echo number_format($totalDevengado); ?></label> </th>
-                    <th class="text-right"> <label style="color:black!important" id="total_Girado"><?php echo number_format($totalGirado); ?></label> </th>
-                    <th class="text-right"> </th>
-                </tr>
-                <tr style="background-color: #002747">
-                    <th style="font-weight:bold;color:white">N°</th>
-                    <th style="font-weight:bold;color:white" class="text-center">MUNICIPALIDAD</th>
-                    <th style="font-weight:bold;color:white" class="text-center">PROYECTO</th>
-                    <th style="font-weight:bold;color:white" class="text-center">PIA</th>
-                    <th style="font-weight:bold;color:white" class="text-center">PIM</th>
-                    <th style="font-weight:bold;color:white" class="text-center">Certificación</th>
-                    <th style="font-weight:bold;color:white" class="text-center">Compromiso Anual</th>           
-                    <th style="font-weight:bold;color:white" class="text-center">Atención de compromiso anual</th>
-                    <th style="font-weight:bold;color:white" class="text-center">Devengado</th>
-                    <th style="font-weight:bold;color:white" class="text-center">Girado</th>
-                    <th style="font-weight:bold;color:white" class="text-center">Avance de Ejecución %</th>
-                </tr>
-            </thead>
+<div class="col-md-12">
+    <div class="col-md-12">
+
+
+        <div class="table-responsive table-responsive-data2" style="margin-top:40px">
+            <table id="tablaDatos" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr style="background:white!important;border:none!important">
+                        <th colspan="3"> <label style="color:black!important"> TOTALES </label> </th>
+
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_PIA"><?php echo number_format($totalPIA); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_PIM"><?php echo number_format($totalPIM); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_Certificacion"><?php echo number_format($totalCertificacion); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_Compromiso"><?php echo number_format($totalCompromisoAnual); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_Atencion"><?php echo number_format($totalCompromisoMensual); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_Devengado"><?php echo number_format($totalDevengado); ?></label> </th>
+                        <th class="text-right"> <label style="color:black!important"
+                                id="total_Girado"><?php echo number_format($totalGirado); ?></label> </th>
+                        <th class="text-right"> </th>
+                    </tr>
+                    <tr style="background-color: #002747">
+                        <th style="font-weight:bold;color:white">N°</th>
+                        <th style="font-weight:bold;color:white" class="text-center">MUNICIPALIDAD</th>
+                        <th style="font-weight:bold;color:white" class="text-center">PROYECTO</th>
+                        <th style="font-weight:bold;color:white" class="text-center">PIA</th>
+                        <th style="font-weight:bold;color:white" class="text-center">PIM</th>
+                        <th style="font-weight:bold;color:white" class="text-center">Certificación</th>
+                        <th style="font-weight:bold;color:white" class="text-center">Compromiso Anual</th>
+                        <th style="font-weight:bold;color:white" class="text-center">Atención de compromiso anual</th>
+                        <th style="font-weight:bold;color:white" class="text-center">Devengado</th>
+                        <th style="font-weight:bold;color:white" class="text-center">Girado</th>
+                        <th style="font-weight:bold;color:white" class="text-center">Avance de Ejecución %</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <?php $n=1; foreach($lista as $r){ ?>
                     <tr style="height:auto">
-                          <td class="align-middle text-left"> <?php echo $n; ?> </td>          
-                          <td class="align-middle text-left"> <?php echo $r['MUNICIPALIDAD'] ?> </td>
-                          <td class="align-middle text-left"> <?php echo $r['PROYECTO'] ?> </td>
-                          <td class="align-middle text-right"> <?php echo number_format($r['PIA']); ?> </td>
-                          <td class="align-middle text-right"> <?php echo number_format($r['PIM']); ?> </td>
-                          <td class="align-middle text-right"> <?php echo number_format($r['CERTIFICACION']); ?> </td>
-                          <td class="align-middle text-right"> <?php echo number_format($r['COMPROMISO']); ?> </td>
-                          <td class="align-middle text-right"> <?php echo number_format($r['ATENCION']); ?> </td>
-                          <td class="align-middle text-right"> <?php echo number_format($r['DEVENGADO']); ?> </td>
-                          <td class="align-middle text-right"> <?php echo number_format($r['GIRADO']); ?> </td>
-                          <td class="align-middle text-right"> <?php echo number_format($r['AVANCE'],1); ?> </td> 
-                    </tr> 
+                        <td class="align-middle text-left"> <?php echo $n; ?> </td>
+                        <td class="align-middle text-left"> <?php echo $r['MUNICIPALIDAD'] ?> </td>
+                        <td class="align-middle text-left"> <?php echo $r['PROYECTO'] ?> </td>
+                        <td class="align-middle text-right"> <?php echo number_format($r['PIA']); ?> </td>
+                        <td class="align-middle text-right"> <?php echo number_format($r['PIM']); ?> </td>
+                        <td class="align-middle text-right"> <?php echo number_format($r['CERTIFICACION']); ?> </td>
+                        <td class="align-middle text-right"> <?php echo number_format($r['COMPROMISO']); ?> </td>
+                        <td class="align-middle text-right"> <?php echo number_format($r['ATENCION']); ?> </td>
+                        <td class="align-middle text-right"> <?php echo number_format($r['DEVENGADO']); ?> </td>
+                        <td class="align-middle text-right"> <?php echo number_format($r['GIRADO']); ?> </td>
+                        <td class="align-middle text-right"> <?php echo number_format($r['AVANCE'],1); ?> </td>
+                    </tr>
                     <?php $n++; } ?>
                 </tbody>
 
             </table>
         </div>
-            
-        </div>
-        </div>
-            
-        <script>
-            
-            $(document).ready(function() {
-                $('#tablaDatos').DataTable( {
-                    "iDisplayLength": 50,  
-                    dom: 'fBrtlp',
-                    buttons: [ {extend: 'excel',text: 'Descargar Excel',className: 'btn-success botonExcelDescarga'} ]
-                } );
-            } );
-            
-        </script>
-        
-        <?php
+
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tablaDatos').DataTable({
+        "iDisplayLength": 50,
+        dom: 'fBrtlp',
+        buttons: [{
+            extend: 'excel',
+            text: 'Descargar Excel',
+            className: 'btn-success botonExcelDescarga'
+        }]
+    });
+});
+</script>
+
+<?php
     }
     
     ?>
-        <script> $("#divBloque1").hide(); $("#divBloque2").hide(); $("#divBloque3").hide(); $("#divBloque4").hide(); </script>
-     
-    <?php    
+<script>
+$("#divBloque1").hide();
+$("#divBloque2").hide();
+$("#divBloque3").hide();
+$("#divBloque4").hide();
+</script>
+
+<?php    
 }
 
 else if( isset($_POST['resumen_municipalidad']) ){
@@ -1523,108 +1667,121 @@ else if( isset($_POST['resumen_municipalidad']) ){
          ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Mi página</title>
     <link rel="stylesheet" href="../../dom/css/consulta.css">
     <style>
-        .card-header{
-            height: 40%;
-        }
-        .card-body{
-            height: 40%;
-        }
-        .card-body-content{
-            margin-bottom: 7%;
-        }
+    .card-header {
+        height: 40%;
+    }
+
+    .card-body {
+        height: 40%;
+    }
+
+    .card-body-content {
+        margin-bottom: 7%;
+    }
     </style>
 </head>
+
 <body>
     <div class="col-md-3">
-        
+
         <div class="row">
-            <a  target="_blank" href="resumen.php?pre=<?php echo $r['PRESUPUESTO'] ?>&anio=<?php echo $anio ?>&mes=<?php echo $mesActualFiltro ?>&muni=<?php echo $r['MUNICIPALIDAD'] ?>">
-            <div class="col-md-12">
-                
-            </div>
+            <a target="_blank"
+                href="resumen.php?pre=<?php echo $r['PRESUPUESTO'] ?>&anio=<?php echo $anio ?>&mes=<?php echo $mesActualFiltro ?>&muni=<?php echo $r['MUNICIPALIDAD'] ?>">
                 <div class="col-md-12">
-                  <div class="thumbnail" style="height:470px!important;background-image: url('../images/Fondo_Card<?php echo $contador?>.jpg');opacity: 0.8;">
-                    <div class="caption text-center card-header">
-                      <div class="position-relative">
-                        <img src="../dom/img/icono-municipalidad.svg" style="width:72px;height:72px;" />
-                      </div>
-                      <h4 style="color:white;font-weight: bold;font-family:'Zilla Slab',Georgia,'Times New Roman',serif" id="thumbnail-label"><?php echo $r['MUNICIPALIDAD']; ?></h4>
-                      <div class="position-relative" style="color:black!important;background:white!important;border-radius: 10px;font-size:12px!important;padding:5px!important">
-                          <b>Departamento: </b><?php echo $r['DEPARTAMENTO'] ?>
-                          ,<b> Provincia: </b><?php echo $r['PROVINCIA'] ?>
-                      </div>
-                    </div>
-                      <div class="caption text-left card-body" style="color:white;font-weight: bold"> 
-                        <h4 class="card-body-content row">
-                            <div class="col-5">
-                                <i class="glyphicon glyphicon-file light-red lighter bigger-120"></i>
-                                &nbsp;Presupuesto: 
 
+                </div>
+                <div class="col-md-12">
+                    <div class="thumbnail"
+                        style="height:470px!important;background-image: url('../images/Fondo_Card<?php echo $contador?>.jpg');opacity: 0.8;">
+                        <div class="caption text-center card-header">
+                            <div class="position-relative">
+                                <img src="../dom/img/icono-municipalidad.svg" style="width:72px;height:72px;" />
                             </div>
-                            <div class="col-7">
-                            
-                                <?php echo number_format($r['PRESUPUESTO']); ?> 
-
-                            </div>
-                            
-
-                        </h4>
-                        <h4 class="card-body-content row">
-                            <div class="col-5">
-                            <i class="glyphicon glyphicon glyphicon-list-alt light-red lighter bigger-120"></i>
-                            &nbsp;Ejecución:  
-
-                            </div>
-                            <div class="col-7">
-                            
-                                <?php echo number_format($r['EJECUCION']); ?>
-
-                            </div>
-                            
-
-                        </h4>
-                        <h4 class="card-body-content row">
-                            <div class="col-5">
-                            <i class="glyphicon glyphicon glyphicon-folder-close light-red lighter bigger-120"></i>
-                            &nbsp;Proyectos:  
-
-                            </div>
-                            <div class="col-7">
-                            
-                            <?php echo number_format($r['CANTIDAD']); ?>
-
-                            </div>
-                            
-
-                        </h4>
-
-                          
-                      </div>
-                    <div class="caption card-footer text-center" style="color:white;font-weight: bold">
-                      <ul class="list-inline"> 
-                          <h4> <i class="glyphicon glyphicon-signal light-red lighter bigger-120"></i>&nbsp; Avance: </h4>
-                        <li></li>
-                        <h2> <?php echo $r['AVANCE']." %"; ?></h2>                               
-                        <div class="progress">
-                            <div class="progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $r['AVANCE'] ?>%; background: #D1C01B !important">
+                            <h4 style="color:white;font-weight: bold;font-family:'Zilla Slab',Georgia,'Times New Roman',serif"
+                                id="thumbnail-label"><?php echo $r['MUNICIPALIDAD']; ?></h4>
+                            <div class="position-relative"
+                                style="color:black!important;background:white!important;border-radius: 10px;font-size:12px!important;padding:5px!important">
+                                <b>Departamento: </b><?php echo $r['DEPARTAMENTO'] ?>
+                                ,<b> Provincia: </b><?php echo $r['PROVINCIA'] ?>
                             </div>
                         </div>
-                      </ul>
+                        <div class="caption text-left card-body" style="color:white;font-weight: bold">
+                            <h4 class="card-body-content row">
+                                <div class="col-5">
+                                    <i class="glyphicon glyphicon-file light-red lighter bigger-120"></i>
+                                    &nbsp;Presupuesto:
+
+                                </div>
+                                <div class="col-7">
+
+                                    <?php echo number_format($r['PRESUPUESTO']); ?>
+
+                                </div>
+
+
+                            </h4>
+                            <h4 class="card-body-content row">
+                                <div class="col-5">
+                                    <i class="glyphicon glyphicon glyphicon-list-alt light-red lighter bigger-120"></i>
+                                    &nbsp;Ejecución:
+
+                                </div>
+                                <div class="col-7">
+
+                                    <?php echo number_format($r['EJECUCION']); ?>
+
+                                </div>
+
+
+                            </h4>
+                            <h4 class="card-body-content row">
+                                <div class="col-5">
+                                    <i
+                                        class="glyphicon glyphicon glyphicon-folder-close light-red lighter bigger-120"></i>
+                                    &nbsp;Proyectos:
+
+                                </div>
+                                <div class="col-7">
+
+                                    <?php echo number_format($r['CANTIDAD']); ?>
+
+                                </div>
+
+
+                            </h4>
+
+
+                        </div>
+                        <div class="caption card-footer text-center" style="color:white;font-weight: bold">
+                            <ul class="list-inline">
+                                <h4> <i class="glyphicon glyphicon-signal light-red lighter bigger-120"></i>&nbsp;
+                                    Avance: </h4>
+                                <li></li>
+                                <h2> <?php echo $r['AVANCE']." %"; ?></h2>
+                                <div class="progress">
+                                    <div class="progress-bar-info" role="progressbar" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100"
+                                        style="width:<?php echo $r['AVANCE'] ?>%; background: #D1C01B !important">
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
                 </div>
-            </a>     
+            </a>
         </div>
     </div>
-    
+
 </body>
+
 </html>
 
-                                                                    
+
 <!--            <div class="col-lg-6 d-flex align-items-stretch ftco-animate fadeInUp ftco-animated">
           	<div class="blog-entry d-flex">
           		<a href="blog-single.html" class="block-20 img" style="background-image: url('../images/Fondo_Peru2.jpg');">
@@ -1640,17 +1797,17 @@ else if( isset($_POST['resumen_municipalidad']) ){
               </div>
             </div>
           </div>                                                        -->
-                                                                    
-                                                                    
-            
-    <?php 
+
+
+
+<?php 
         }
         
         ?> <div class="col-md-12">&nbsp;</div> <?php
     } 
     ?>
-    
-    <?php
+
+<?php
 }
 
 else if( isset($_POST['muni_resumen']) ){
@@ -1668,26 +1825,32 @@ else if( isset($_POST['muni_resumen']) ){
     
     if($datosMuni['ARCHIVO']!=null && $datosMuni['ARCHIVO']!="" && isset($_SESSION['flag_linea']) && $_SESSION['flag_linea']==1){
         ?>
-            <script>
-                $("#divLineaTiempo").show();
-                $("#hrefLink").attr("href", "https://marcologico.com/excel/<?php echo $datosMuni['ARCHIVO'] ?>");
-            </script>
-        <?php 
+<script>
+$("#divLineaTiempo").show();
+$("#hrefLink").attr("href", "https://marcologico.com/excel/<?php echo $datosMuni['ARCHIVO'] ?>");
+</script>
+<?php 
     }
     else{
         ?>
-            <script>
-                $("#divLineaTiempo").hide();
-            </script>
-        <?php 
+<script>
+$("#divLineaTiempo").hide();
+</script>
+<?php 
     }
     
     if($datosMuni!=null){
         ?>
-        <script>$("#labelDepartamento").html('<?php echo "DEPARTAMENTO: <br>".$datosMuni['DEPARTAMENTO']; ?>');</script>
-        <script>$("#labelProvincia").html('<?php echo "PROVINCIA: <br>".$datosMuni['PROVINCIA']; ?>');</script>
-        <script>$("#labelDistrito").html('<?php echo "DISTRITO: <br>".$datosMuni['DISTRITO']; ?>');</script>
-        <?php
+<script>
+$("#labelDepartamento").html('<?php echo "DEPARTAMENTO: <br>".$datosMuni['DEPARTAMENTO']; ?>');
+</script>
+<script>
+$("#labelProvincia").html('<?php echo "PROVINCIA: <br>".$datosMuni['PROVINCIA']; ?>');
+</script>
+<script>
+$("#labelDistrito").html('<?php echo "DISTRITO: <br>".$datosMuni['DISTRITO']; ?>');
+</script>
+<?php
     }
     
     /* montos totales */
@@ -1699,25 +1862,35 @@ else if( isset($_POST['muni_resumen']) ){
         $montoAcreditado = $dMix['ACREDITADO'];
         
     ?>
-        <script>$("#labelDatosMontos").html('<?php echo "PIA Inicial de ingreso:   S/ ".number_format($dMix['PIA'],2)."<br>"
+<script>
+$("#labelDatosMontos").html('<?php echo "PIA Inicial de ingreso:   S/ ".number_format($dMix['PIA'],2)."<br>"
                 ."Presupuesto actualizado de ingreso:   S/ ".number_format($dMix['PIM'],2)."<br>"
                 ."Monto autorizado (transferencia):   S/ ".number_format($montoAutorizado,2)."<br>"
                 ."Monto acreditado (transferencia):   S/ ".number_format($montoAcreditado,2)."<br>"
-                ."Recursos financieros totales (ingreso):  S/ ".number_format($dMix['RECAUDADO'],2); ?>');</script>
-    <?php
+                ."Recursos financieros totales (ingreso):  S/ ".number_format($dMix['RECAUDADO'],2); ?>');
+</script>
+<?php
     }
     
     /* indicadores */
     $datosAvance = $model->presupuestoEjecucionAvance($anio, $muni,$mes);
     if($datosAvance!=null){
         ?>
-        
-        <script>$("#labelPresupuesto").html('<?php echo "S/ ".number_format($datosAvance['PRESUPUESTO']); ?>');</script>
-        <script>$("#labelInicialInversion").html('<?php echo "S/ ".number_format($datosAvance['INICIAL']); ?>');</script>
-        <script>$("#labelEjecucion").html('<?php echo "S/ ".number_format($datosAvance['EJECUCION']); ?>');</script>
-        <script>$("#labelAvance").html('<?php echo "Avance Financiero: ".number_format($datosAvance['AVANCE'],2)."%"; ?>');</script>
-        
-        <?php 
+
+<script>
+$("#labelPresupuesto").html('<?php echo "S/ ".number_format($datosAvance['PRESUPUESTO']); ?>');
+</script>
+<script>
+$("#labelInicialInversion").html('<?php echo "S/ ".number_format($datosAvance['INICIAL']); ?>');
+</script>
+<script>
+$("#labelEjecucion").html('<?php echo "S/ ".number_format($datosAvance['EJECUCION']); ?>');
+</script>
+<script>
+$("#labelAvance").html('<?php echo "Avance Financiero: ".number_format($datosAvance['AVANCE'],2)."%"; ?>');
+</script>
+
+<?php 
     }
     
     $mayorProyecto = $model->resumenMuniDetalleTop($anio, $muni,"PROYECTO",$mes);
@@ -1733,10 +1906,14 @@ else if( isset($_POST['muni_resumen']) ){
         
         
         ?>
-        
-        <script>$("#labelInversionPIM").html('<?php echo "<u>Nombre de la Inversión con más PIM:</u> <br> S/".number_format($mayorProyecto['PRESUPUESTO'])." ($porMayorPro% del total) <br>".$mayorProyecto['PROYECTO']." <br>"; ?>');</script>
-        
-        <?php 
+
+<script>
+$("#labelInversionPIM").html(
+    '<?php echo "<u>Nombre de la Inversión con más PIM:</u> <br> S/".number_format($mayorProyecto['PRESUPUESTO'])." ($porMayorPro% del total) <br>".$mayorProyecto['PROYECTO']." <br>"; ?>'
+    );
+</script>
+
+<?php 
     }
     
     $funcionesLista = $model->resumenMuniTopFuncion($anio, $muni,$datosAvance['PRESUPUESTO'],$mes);
@@ -1755,8 +1932,10 @@ else if( isset($_POST['muni_resumen']) ){
             $cadena.= "(".number_format( $r['PRESUPUESTO'], 0)."%)  ".$r['FUNCION']." ( $arregloProCantidad $cadenaEvaluar ) <br>";
         }
         ?>
-        <script>$("#presupuestoFuncion").html('<?php echo strtolower($cadena); ?>');</script>
-        <?php
+<script>
+$("#presupuestoFuncion").html('<?php echo strtolower($cadena); ?>');
+</script>
+<?php
     }
     
     /* listas */
@@ -1774,8 +1953,10 @@ else if( isset($_POST['muni_resumen']) ){
             }
         }
         ?>
-        <script>$("#labelRubros").html('<?php echo strtolower($cadena); ?>');</script>
-        <?php
+<script>
+$("#labelRubros").html('<?php echo strtolower($cadena); ?>');
+</script>
+<?php
     }
     
     $listaFuncion = $model->resumenMuniDetalle($anio, $muni,"FUNCION",$mes);
@@ -1794,11 +1975,17 @@ else if( isset($_POST['muni_resumen']) ){
     
     if($listaProyecto!=null){
         ?>
-                <script>$("#labelTotalProyecto").html('<?php echo count($listaProyecto)." Total de Proyectos <br>" ?>');</script>
-                <?php if($datosMuni['IDMUNICIPALIDAD']!=19){ ?>
-                    <script>$("#labelTotalProyecto").html('<?php echo count($listaProyecto)." Total de Proyectos <br>".$numProyectoSupera." proyecto(s) >= S/ ".($datosMuni['MONTO']/1000)." mil"." (".number_format($presupuestoProyectoSupera,2)."% del total)" ; ?>');</script>
-                <?php } ?>
-        <?php
+<script>
+$("#labelTotalProyecto").html('<?php echo count($listaProyecto)." Total de Proyectos <br>" ?>');
+</script>
+<?php if($datosMuni['IDMUNICIPALIDAD']!=19){ ?>
+<script>
+$("#labelTotalProyecto").html(
+    '<?php echo count($listaProyecto)." Total de Proyectos <br>".$numProyectoSupera." proyecto(s) >= S/ ".($datosMuni['MONTO']/1000)." mil"." (".number_format($presupuestoProyectoSupera,2)."% del total)" ; ?>'
+    );
+</script>
+<?php } ?>
+<?php
     }
     
     /* calculos finales */    
@@ -1815,9 +2002,13 @@ else if( isset($_POST['muni_resumen']) ){
             $cumplimientoGirado = $datosAvance['GIRADO']*100/$datosAvance['EJECUCION'];
     }
     ?>
-        
-        <script>$("#labelotros").html('<?php echo "Cumplimiento de certificación (certificación/pim): ".number_format($cumplimientoCertificacion,2)."%"."<br>"."Cumplimiento de contrato (devengado/compromiso): ".number_format($cumplimientoContrato,2)."%"."<br>"."Cumplimiento de girado (girado/devengado): ".number_format($cumplimientoGirado,2)."%"."<br>"; ?>');</script>
-    <?php
+
+<script>
+$("#labelotros").html(
+    '<?php echo "Cumplimiento de certificación (certificación/pim): ".number_format($cumplimientoCertificacion,2)."%"."<br>"."Cumplimiento de contrato (devengado/compromiso): ".number_format($cumplimientoContrato,2)."%"."<br>"."Cumplimiento de girado (girado/devengado): ".number_format($cumplimientoGirado,2)."%"."<br>"; ?>'
+    );
+</script>
+<?php
     /* */
     
     resumenItem($listaProyecto,"Proyecto","PROYECTO",$pre);
@@ -1834,16 +2025,16 @@ function resumenItem($lista,$titulo,$campoBD,$presupuestoMuni){
     
     if($lista!=null){
         ?>
-        
-        <div class="col-md-12">
-            <div class="divTituloResumen">
-                <center>
-                <?php echo "Detalle por ".$titulo ?>
-                </center>    
-            </div>
-        </div>
-        
-        <?php
+
+<div class="col-md-12">
+    <div class="divTituloResumen">
+        <center>
+            <?php echo "Detalle por ".$titulo ?>
+        </center>
+    </div>
+</div>
+
+<?php
         $contador = 1;
             
         foreach($lista as $r){
@@ -1859,44 +2050,47 @@ function resumenItem($lista,$titulo,$campoBD,$presupuestoMuni){
                 $contador=1;
             }
         ?>
-        
-        <div class="col-md-4">
-            <div class="row">
-                <div class="col-md-12">
-                  <div class="thumbnail" style="cursor:default;font-family:tahoma!important;background-image: url('../images/Fondo_Card<?php echo $contador?>.jpg');">
-                    <div class="caption text-center" style="height: 140px!important">
-                            <h5 id="thumbnail-label" style="text-align: justify!important;color:white!important"><?php echo $r[$campoBD]; ?></h5>
-                     </div>
-                     <div class="caption text-left" style="font-size:14px!important"> 
-                      <p style="color:white!important"><i class="glyphicon glyphicon-file light-red lighter bigger-120"></i>
-                          &nbsp;Presupuesto: &nbsp;&nbsp;&nbsp;&nbsp; <?php echo number_format($r['PRESUPUESTO'],0)." ($p %)"; ?> 
-                      </p>
-                      <p style="color:white!important">
-                          <i class="glyphicon glyphicon glyphicon-list-alt light-red lighter bigger-120"></i>
-                          &nbsp;&nbsp;Ejecución: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo number_format($r['EJECUCION'],0); ?>
-                      </p>
-                      <?php if($campoBD=="FUNCION"){ ?>
-                      <p style="color:white!important">
-                          <i class="glyphicon glyphicon glyphicon-folder-close light-red lighter bigger-120"></i>
-                          &nbsp;&nbsp;Proyectos: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $r['CANTIDAD_PROYECTOS']; ?>
-                      </p>
-                      <?php }?>
-                    
-                     </div>
-                    <div class="caption card-footer text-center">
-                      <ul class="list-inline" style="color:white!important;font-size:22px!important"> 
+
+<div class="col-lg-4 col-md-12" style="display: flex;  justify-content: center; align-items: center;">
+    <div class="row card-content">
+        <div class="col-md-12">
+            <div class="thumbnail detalle-imagen"
+                style="cursor:default;font-family:tahoma!important;background-image: url('../images/Fondo_Card<?php echo $contador?>.jpg');">
+                <div class="caption text-center header-caption">
+                    <h5 class="header-label" id="thumbnail-label" style="text-align: justify!important;color:white!important">
+                        <?php echo $r[$campoBD]; ?></h5>
+                </div>
+                <div class="caption text-left body-caption" >
+                    <p style="color:white!important"><i
+                            class="glyphicon glyphicon-file light-red lighter bigger-120"></i>
+                        &nbsp;Presupuesto:<?php echo number_format($r['PRESUPUESTO'],0)." ($p %)"; ?>
+                    </p>
+                    <p style="color:white!important">
+                        <i class="glyphicon glyphicon glyphicon-list-alt light-red lighter bigger-120"></i>
+                        &nbsp;&nbsp;Ejecución: <?php echo number_format($r['EJECUCION'],0); ?>
+                    </p>
+                    <?php if($campoBD=="FUNCION"){ ?>
+                    <p style="color:white!important">
+                        <i class="glyphicon glyphicon glyphicon-folder-close light-red lighter bigger-120"></i>
+                        &nbsp;&nbsp;Proyectos: <?php echo $r['CANTIDAD_PROYECTOS']; ?>
+                    </p>
+                    <?php }?>
+
+                </div>
+                <div class="caption card-footer text-center ">
+                    <ul class="list-inline footer-caption" style="color:white!important">
                         <li> <i class="glyphicon glyphicon-signal light-red lighter bigger-120"></i>&nbsp; Avance: </li>
                         <li></li>
                         <li> <?php echo $r['AVANCE']." %"; ?></li>
-                      </ul>
-                    </div>
-                  </div>
+                    </ul>
                 </div>
             </div>
         </div>
-        
-        
-        <?php
+    </div>
+</div>
+
+
+<?php
             $contador++;
         }
     }
@@ -2009,9 +2203,13 @@ function limpiarFiltros(){
         foreach($listaFiltros as $row){
         
              ?>
-                <script>document.getElementById("<?php echo $row[2] ?>").disabled=false;</script>
-                <script>document.getElementById("<?php echo $row[3] ?>").style.display='none';</script>
-             <?php 
+<script>
+document.getElementById("<?php echo $row[2] ?>").disabled = false;
+</script>
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
+</script>
+<?php 
         }
         
     }
@@ -2027,9 +2225,13 @@ function limpiarFiltrosActividad(){
         foreach($listaFiltros as $row){
         
              ?>
-                <script>document.getElementById("<?php echo $row[2] ?>").disabled=false;</script>
-                <script>document.getElementById("<?php echo $row[3] ?>").style.display='none';</script>
-             <?php 
+<script>
+document.getElementById("<?php echo $row[2] ?>").disabled = false;
+</script>
+<script>
+document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
+</script>
+<?php 
         }
         
     }
@@ -2045,4 +2247,3 @@ function existeKey($listaKey,$cad){
     
     return false;
 }
-
