@@ -1677,17 +1677,26 @@ else if( isset($_POST['resumen_municipalidad']) ){
     }
 
     .card-body {
-        height: 40%;
+        height: 35%;
+    }
+    .card-footer{
+        height: 30%;
     }
 
     .card-body-content {
         margin-bottom: 7%;
     }
+    .thumbnail-style{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
     </style>
 </head>
 
 <body>
-    <div class="col-md-3">
+    <div class="col-lg-3 col-md-6 col-sm-12">
 
         <div class="row">
             <a target="_blank"
@@ -1696,7 +1705,7 @@ else if( isset($_POST['resumen_municipalidad']) ){
 
                 </div>
                 <div class="col-md-12">
-                    <div class="thumbnail"
+                    <div class="thumbnail thumbnail-style"
                         style="height:470px!important;background-image: url('../images/Fondo_Card<?php echo $contador?>.jpg');opacity: 0.8;">
                         <div class="caption text-center card-header">
                             <div class="position-relative">

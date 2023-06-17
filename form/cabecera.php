@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>Navbar con botón desplegable</title>
+    <title>Header</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
@@ -24,47 +25,103 @@
         }
 
         .font-time {
-            font-size: 2em;
+            font-size: 1.5em;
             color: white;
         }
-        body{
-                max-width: 100%;
-            }
-        @media (min-width: 200px) and (max-width: 1024px) {
+
+        body {
+            max-width: 100%;
+        }
+
+        .navbar .navbar-nav {
+            flex-direction: column;
+            margin-left: 1%;
+        }
+
+
+        @media screen and (min-width: 767px) {
             .navbar .navbar-nav {
-                flex-direction: column;
-                margin-left: 1%;
+                flex-direction: row;
+            }
+
+            .navbar-toggler {
+                margin-bottom: 10px;
+            }
+
+            .font-link {
+                font-size: 1.5em;
+            }
+
+            .font-time {
+                font-size: 1.2em;
+                color: white;
+            }
+
+            .btn-toggler {
+                display: none;
+            }
+
+            .navbar>.container {
+
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: row;
+                align-content: center;
             }
 
 
         }
 
-        @media (min-width: 1024px) {
+        @media screen and (min-width: 1023px) {
+          
+
+            .navbar>.container {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                align-content: center;
+
+            }
+
+            .col-lg-3 {
+                width: 33.3%;
+            }
+
+
+        }
+
+        @media screen and (min-width: 1025px) {
             .navbar .navbar-nav {
                 flex-direction: row;
             }
 
             .font-link {
-                font-size: 2em;
+                font-size: 1.5em;
             }
 
             .font-time {
                 font-size: 2em;
                 color: white;
             }
-            .reg{
+
+            .reg {
                 margin-left: 5%;
             }
-           
+
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:0px">
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark" style="margin:0px">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler toggler-button btn-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -135,6 +192,6 @@
         - Consulta de Transferencias a los Gobiernos Nacional, Regional, Local y EPS
         <br>
         - Consulta Amigable de Ingresos Presupuesto y Ejecución de Ingresos
-       
+
     </div>
 </div>
