@@ -341,8 +341,8 @@ and open the template in the editor.
      
        
         
-        <section class="ftco-section">
-      <div class="row">
+        <section class="ftco-section fondo-row-table">
+      <div class="row row-table">
           
           <div class="col-md-12">
               <center>
@@ -353,17 +353,17 @@ and open the template in the editor.
           <div class="col-md-12">
               <div class="col-md-12">
                   <a href="../src/controller/transferencia.php?reporte">
-                    <button class="btn btn-success">Descargar base de datos completa</button>
+                    <button class="btn btn-success btn-descarga">Descargar base de datos completa</button>
                   </a>  
                     <br><br><br>
               </div>
           </div>
           
-          <div class="col-md-12">
+          <div class="row">
                             
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-3">
                     <label class="nombreFiltro">Año</label>
-                    <select class="form-control nombreFiltro" id="controlAnio" style="font-size:15px!important">
+                    <select class="form-select nombreFiltro" id="controlAnio" style="font-size:15px!important">
                         <?php for($i=2015;$i<=date('Y');$i++){ ?>
                             <option <?php if(date('Y')==$i){echo "selected";}?>><?php echo $i; ?></option>
                         <?php } ?>
@@ -376,31 +376,31 @@ and open the template in the editor.
                 <!--
                 <div class="col-md-3">
                     <label class="nombreFiltro">&nbsp;</label>
-                    <select id="controlTipo" class="form-control nombreFiltro"style="font-size:15px!important">
+                    <select id="controlTipo" class="form-select nombreFiltro"style="font-size:15px!important">
                         <option value="1">Sólo Proyectos</option>
                         <option value="2">Proyectos Priorizados</option>
                     </select>
                 </div>
                 -->
-                <div class="col-md-2 text-center">
+                <div class="col-lg-2 col-md-3 text-center">
                     <br>
-                    <button class="btn btn-warning" style="width:150px;margin-top:12px;height:48px;background:#002747!important;border-color:#002747!important" id="btnResultado">Ver resultado</button>
+                    <button class="btn btn-success btn-filtro" style="width:150px;margin-top:12px;height:48px;background:#002747!important;border-color:#002747!important" id="btnResultado">Ver resultado</button>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-lg-2 col-md-3 text-center">
                     <br>
-                    <button class="btn btn-success" style="width:150px;margin-top:12px;height:48px;background: rgba(255,0,38,0.89)!important;border: none" id="borrarFiltro">Borrar filtros</button>
+                    <button class="btn btn-success btn-filtro" style="width:150px;margin-top:12px;height:48px;background: rgba(255,0,38,0.89)!important;border: none" id="borrarFiltro">Borrar filtros</button>
                 </div>
 
                 <div class="col-md-12">&nbsp;</div>    
 
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-6 col-md-12">
                     <div class="panel panel-info">
                         <div class="panel-heading panelHeading" style="background:#002747!important;"><label class="nombreFiltro" style="color:white!important">¿Dónde se enviaron las transferencias?</label></div>
                         <div class="panel-body row">
 
                             <div class="col-md-4">
                                 <label class="nombreFiltro">Departamento</label>
-                                <select class="form-control nombreFiltro" id="controlDpto" style="font-size:15px!important">    
+                                <select class="form-select nombreFiltro" id="controlDpto" style="font-size:15px!important">    
                                     <option value="-1">TODOS</option>
                                     <?php if(isset($_SESSION['cboDpto'])){ ?>
                                     <?php foreach($_SESSION['cboDpto'] as $r){ ?>
@@ -411,14 +411,14 @@ and open the template in the editor.
 
                             <div class="col-md-4">
                                 <label class="nombreFiltro">Provincia</label>
-                                <select class="form-control nombreFiltro" id="controlProv" style="font-size:15px!important">    
+                                <select class="form-select nombreFiltro" id="controlProv" style="font-size:15px!important">    
                                     <option value="-1">TODOS</option>
                                 </select>    
                             </div>
 
                             <div class="col-md-4">
                                 <label class="nombreFiltro">Municipalidad</label>
-                                <select class="form-control nombreFiltro" id="controlMuni" style="font-size:15px!important">    
+                                <select class="form-select nombreFiltro" id="controlMuni" style="font-size:15px!important">    
                                     <option value="-1">TODOS</option>
                                 </select>    
                             </div>
@@ -426,8 +426,7 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-2" id="divBloque1">
+                <div class="col-xl-2 col-lg-6 col-md-12" id="divBloque1">
                     <div class="panel panel-info">
                         <div class="panel-heading panelHeading" style="background:#002747!important;">
                             <center>
@@ -446,7 +445,7 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2" id="divBloque2">
+                <div class="col-xl-2 col-lg-6 col-md-12" id="divBloque2">
                     <div class="panel panel-info">
                         <div class="panel-heading panelHeading" style="background:#002747!important;">
                             <center>
@@ -471,7 +470,7 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2" id="divBloque3">
+                <div class="col-xl-2 col-lg-6 col-md-12" id="divBloque3">
                     <div class="panel panel-info">
                         <div class="panel-heading panelHeading" style="background:#002747!important;">
                             <center>

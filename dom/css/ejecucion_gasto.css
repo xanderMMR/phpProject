@@ -1,0 +1,191 @@
+.thumbnail {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    min-width: 100%;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.thumbnail-description {
+    min-height: 40px;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+}
+
+body {
+    background: #eeeeee;
+}
+
+#panelPrincipal {
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+.panelTitulo {
+    background: white !important;
+}
+
+.tituloCentral {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.controlFiltro {
+    background: #FDFDFD;
+}
+
+.nombreFiltro {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+select {
+    height: 30px !important;
+    font-size: 10px !important;
+}
+
+.panelHeading {
+    font-size: 11px !important;
+    font-weight: normal;
+}
+
+
+.botonFiltrado {
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px !important;
+    background: #1DB2EC !important;
+    border-color: #1DB2EC !important;
+}
+
+.botonFiltro {
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    width: 140px !important;
+    margin-right: 12px !important;
+    border-radius: 10px !important;
+    background: #1DB2EC !important;
+    border-color: #1DB2EC !important;
+}
+
+.botonVer {
+    font-size: 11px;
+}
+
+.tablaResultado {
+    font-size: 10px !important;
+}
+
+.cabeceraTabla {
+    font-size: 12px !important;
+}
+
+table {
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+table>thead>tr>th {
+    border-bottom: 1px solid black !important;
+}
+
+table>thead>tr>th {
+    border-bottom: 1px solid black !important;
+    border-top: 1px solid black !important;
+}
+
+table>tbody>tr>td {
+    vertical-align: middle;
+}
+
+.borrarFiltro {
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.botonExcel {
+    font-size: 11px;
+}
+
+.botonSalir {
+    font-size: 11px !important;
+    width: 150px !important;
+}
+
+.watermark {
+    opacity: 0.8;
+    color: #00407d;
+    z-index: 1000000;
+}
+
+.botonExcelDescarga {
+    height: 48px !important;
+}
+
+.wrapper1,
+.wrapper2 {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.wrapper1 {
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.wrapper2 {
+    height: auto;
+}
+
+.div1 {
+    width: 160%;
+    height: 20px;
+}
+
+.div2 {
+    width: 200%;
+    overflow: auto;
+}
+
+.form-select {
+    height: 50px !important;
+}
+
+.btn-descarga {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.btn-filtro {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.btn-secondary {
+    font-size: 1.4em;
+}

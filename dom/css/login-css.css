@@ -46,7 +46,7 @@
 
 .obligatorio {
     display: none;
-    font-size: 11px;
+    font-size: 2.2em;
     color: red;
 }
 
@@ -105,6 +105,18 @@
         height: 100vh;
         max-width: 100%;
     }
+    .h5titulo{
+        font-size: 3em;
+    }
+    .modal-dialog{
+        max-width: 70%;
+    }
+   .inputAcceso{
+    font-size: 2.2em;
+   }
+   .inputRecuperar{
+    font-size: 2em;
+   }
     /* #bg-image {
         background-image: url('../img/consultas.jpg');
         background-size: cover;

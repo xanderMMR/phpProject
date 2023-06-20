@@ -1,0 +1,76 @@
+.btn-descarga {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.nombreFiltro {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+select {
+    height: 30px !important;
+    font-size: 10px !important;
+}
+.form-select {
+    height: 50px !important;
+}
+.btn-filtro {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.btn-secondary {
+    font-size: 1.4em;
+}
+.content-table{
+    font-size: 1.5em;
+}
+table {
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+.custom-datatable{
+    background-color: white;
+}
+.row-table{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    align-content: center;
+    justify-content: center;
+}
+.fondo-row-table{
+    background-color: #eeeeee;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 1.5em;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: 150px;
+}

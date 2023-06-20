@@ -1,49 +1,108 @@
-#button {
-    padding: 0;
-}
-
-#button li {
-    display: inline;
-}
-
-#button li a {
-    font-family: Arial;
-    font-size: 16px;
-    text-decoration: none;
-    float: left;
-    padding: 10px;
-    background-color: #002747 !important;
-    color: #fff;
-    border-radius: 10px !important;
-}
-
-#button li a:hover {
-    background-color: #2586d7;
-    margin-top: -2px;
-    padding-bottom: 12px;
-}
-
-/* .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.menu li {
-    margin: 0 10px;
-} */
-
 .navbar .navbar-nav {
     flex-direction: row;
-  }
+}
 
-  .navbar .navbar-nav .nav-link {
+.navbar .navbar-nav .nav-link {
     padding-right: 15px;
     padding-left: 15px;
-  }
+}
 
-  .navbar-toggler {
+.navbar-toggler {
     border-color: #fff;
-  }
+}
+
+.font-link {
+    font-size: 2em;
+}
+
+.font-time {
+    font-size: 1.5em;
+    color: white;
+}
+
+body {
+    max-width: 100%;
+}
+
+.navbar .navbar-nav {
+    flex-direction: column;
+    margin-left: 1%;
+}
+
+
+@media screen and (min-width: 767px) {
+    .navbar .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 10px;
+    }
+
+    .font-link {
+        font-size: 1.5em;
+    }
+
+    .font-time {
+        font-size: 1.2em;
+        color: white;
+    }
+
+    .btn-toggler {
+        display: none;
+    }
+
+    .navbar>.container {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-content: center;
+    }
+
+
+}
+
+
+@media screen and (min-width: 992px) {
+  
+
+    .navbar>.container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        align-content: center;
+
+    }
+
+    .col-lg-3 {
+        width: 33.3%;
+    }
+
+
+}
+
+@media screen and (min-width: 1025px) {
+    .navbar .navbar-nav {
+        flex-direction: row;
+    }
+
+    .font-link {
+        font-size: 1.5em;
+    }
+
+    .font-time {
+        font-size: 2em;
+        color: white;
+    }
+
+    .reg {
+        margin-left: 5%;
+    }
+    
+
+}

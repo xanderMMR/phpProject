@@ -478,14 +478,14 @@ else if ( isset($_POST['resultado']) ){
                     </tr>
                     
                     <tr style="background-color: #002747;">
-                        <th style="color:black;font-weight:bold;color:white"></th>
-                        <th style="color:black;font-weight:bold;color:white">N°</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center"> 
+                        <th style="color:black;font-weight:bold;color:white;background-color: #002747;"></th>
+                        <th style="color:black;font-weight:bold;color:white;background-color: #002747;">N°</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center"> 
                             <?php echo $textoCabecera ?>
                             <input type="hidden" id="ultimaColumna" style="color:black!important" value="<?php echo $ultimaBusqueda ?>"> 
                         </th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Monto Autorizado</th>           
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Monto Acreditado</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">Monto Autorizado</th>           
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">Monto Acreditado</th>
                     </tr>
                 </thead>
             <tbody>
@@ -495,13 +495,13 @@ else if ( isset($_POST['resultado']) ){
                           <td>
                               <input type="radio" data-num="<?php echo $n ?>" data-name="<?php echo $r['CAMPO']; ?>" name="radioGrupo" value="<?php echo $r['CAMPO']; ?>">
                           </td>
-                          <td class="align-middle text-left"> <?php echo $n ?> </td>
-                          <td class="align-middle text-left"> <?php echo $r['CAMPO'] ?> </td>
-                          <td class="align-middle text-right"> 
+                          <td class="align-middle text-left content-table"> <?php echo $n ?> </td>
+                          <td class="align-middle text-left content-table"> <?php echo $r['CAMPO'] ?> </td>
+                          <td class="align-middle text-right content-table"> 
                               <input type="hidden" id="autorizado_<?php echo $n?>" value="<?php echo number_format($r['AUTORIZADO']); ?>"/>
                               <?php echo number_format($r['AUTORIZADO']); ?> 
                           </td>
-                          <td class="align-middle text-right"> 
+                          <td class="align-middle text-right content-table"> 
                               <input type="hidden" id="acreditado_<?php echo $n?>" value="<?php echo number_format($r['ACREDITADO']); ?>"/>
                               <?php echo number_format($r['ACREDITADO']); ?> 
                           </td>

@@ -117,35 +117,35 @@ else if( isset($_POST['web_proyectos']) ){
             <table id="tablaDatosP" class="table table-striped table-bordered" style="width:100%">
                 <thead>
                     <tr style="background-color: #002747">
-                        <th style="font-weight:bold;color:white">N°</th>
-                        <th style="font-weight:bold;color:white" class="text-center">PROYECTO</th>
-                        <th style="font-weight:bold;color:white" class="text-center">PIM</th>
-                        <th style="font-weight:bold;color:white" class="text-center">FORMATO 12B</th>
-                        <th style="font-weight:bold;color:white" class="text-center">FORMATO 7A</th>
-                        <th style="font-weight:bold;color:white" class="text-center">FORMATO 8A</th>
+                        <th style="font-weight:bold;color:white; background-color: #002747;">N°</th>
+                        <th style="font-weight:bold;color:white; background-color: #002747;" class="text-center">PROYECTO</th>
+                        <th style="font-weight:bold;color:white; background-color: #002747;" class="text-center">PIM</th>
+                        <th style="font-weight:bold;color:white; background-color: #002747;" class="text-center">FORMATO 12B</th>
+                        <th style="font-weight:bold;color:white; background-color: #002747;" class="text-center">FORMATO 7A</th>
+                        <th style="font-weight:bold;color:white; background-color: #002747;" class="text-center">FORMATO 8A</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $n=1; foreach($lista as $r){ ?>
                     <tr style="height:auto">
-                        <td class="align-middle text-left"> <?php echo $n; ?> </td>
-                        <td class="align-middle text-left"> <?php echo $r['PROYECTO'] ?> </td>
-                        <td class="align-middle text-left"> <?php echo number_format($r['PIM']) ?> </td>
-                        <td class="align-middle text-center">
+                        <td class="align-middle text-left content-table"> <?php echo $n; ?> </td>
+                        <td class="align-middle text-left content-table"> <?php echo $r['PROYECTO'] ?> </td>
+                        <td class="align-middle text-left content-table"> <?php echo number_format($r['PIM']) ?> </td>
+                        <td class="align-middle text-center content-table">
                             <?php if($r['A_LINKFORMATO12B']!=""){ ?>
                             <a href="<?php echo $r['A_LINKFORMATO12B'] ?>" target="_blank">
                                 <?php echo $r['A_LINKFORMATO12B'] ?>
                             </a>
                             <?php } ?>
                         </td>
-                        <td class="align-middle text-center">
+                        <td class="align-middle text-center content-table">
                             <?php if($r['A_LINKFORMATO7']!=""){ ?>
                             <a href="<?php echo $r['A_LINKFORMATO7'] ?>" target="_blank">
                                 <?php echo $r['A_LINKFORMATO7'] ?>
                             </a>
                             <?php } ?>
                         </td>
-                        <td class="align-middle text-center">
+                        <td class="align-middle text-center content-table">
                             <?php if($r['A_LINKFORMATO8A']!=""){ ?>
                             <a href="<?php echo $r['A_LINKFORMATO8A'] ?>" target="_blank">
                                 <?php echo $r['A_LINKFORMATO8A'] ?>
@@ -693,7 +693,7 @@ document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
             <div class="table-responsive">
 
                 <table border="1" style="width:100%;font-size: 16px;">
-                    <tr style="background: #002747!important;color:white!important">
+                    <tr style="background-color: #002747!important;color:white!important">
                         <td class="text-center"><b>Filtro</b></td>
                         <td class="text-center"><b>Valor</b></td>
                         <td class="text-center"><b>PIA</b></td>
@@ -764,7 +764,10 @@ document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
 
             </div>
             <div class="col-md-12">&nbsp;</div>
-
+            
+            <link rel="stylesheet" href="../../dom/css/global.css">
+            
+            
 
             <div class="table-responsive table-responsive-data2">
                 <table id="tablaDatos" class="table table-striped table-bordered" style="width:100%">
@@ -793,32 +796,32 @@ document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
                             <th class="text-right"> </th>
                         </tr>
                         <tr style="background-color: #002747;">
-                            <th style="color:black;font-weight:bold"></th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="color:black;font-weight:bold;background-color: #002747;"></th>
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 align="center">N°</th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 class="text-center">
                                 <?php echo $textoCabecera ?>
                                 <input type="hidden" id="ultimaColumna" style="color:black!important"
                                     value="<?php echo $ultimaBusqueda ?>">
                             </th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 class="text-center">PIA</th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 class="text-center">PIM</th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 class="text-center"> % PIM</th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 class="text-center">Certificación</th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 class="text-center">Compromiso Anual</th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 class="text-center">Atención de compromiso anual</th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 class="text-center">Devengado</th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 class="text-center">Girado</th>
-                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important"
+                            <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important;background-color: #002747;"
                                 class="text-center">Avance de Ejecución %</th>
                         </tr>
                     </thead>
@@ -829,47 +832,47 @@ document.getElementById("<?php echo $row[3] ?>").style.display = 'none';
                                 <input type="radio" data-num="<?php echo $n ?>" data-name="<?php echo $r['CAMPO']; ?>"
                                     name="radioGrupo" value="<?php echo $r['CAMPO']; ?>">
                             </td>
-                            <td class="align-middle text-left"> <?php echo $n; ?> </td>
-                            <td class="align-middle text-left"> <?php echo $r['CAMPO'] ?> </td>
-                            <td class="align-middle text-right">
+                            <td class="align-middle text-left content-table"> <?php echo $n; ?> </td>
+                            <td class="align-middle text-left content-table"> <?php echo $r['CAMPO'] ?> </td>
+                            <td class="align-middle text-right content-table">
                                 <input type="hidden" id="pia_<?php echo $n?>"
                                     value="<?php echo number_format($r['PIA']); ?>" />
                                 <?php echo number_format($r['PIA']); ?>
                             </td>
-                            <td class="align-middle text-right">
+                            <td class="align-middle text-right content-table">
                                 <input type="hidden" id="pim_<?php echo $n?>"
                                     value="<?php echo number_format($r['PIM']); ?>" />
                                 <?php echo number_format($r['PIM']); ?>
                             </td>
-                            <td class="align-middle text-right">
+                            <td class="align-middle text-right content-table">
                                 <?php if($totalPIM>0) echo number_format( ($r['PIM']*100/$totalPIM) ,2 )."%"; else 0;  ?>
                             </td>
-                            <td class="align-middle text-right">
+                            <td class="align-middle text-right content-table">
                                 <input type="hidden" id="certificacion_<?php echo $n?>"
                                     value="<?php echo number_format($r['CERTIFICACION']); ?>" />
                                 <?php echo number_format($r['CERTIFICACION']); ?>
                             </td>
-                            <td class="align-middle text-right">
+                            <td class="align-middle text-right content-table">
                                 <input type="hidden" id="compromiso_<?php echo $n?>"
                                     value="<?php echo number_format($r['COMPROMISO']); ?>" />
                                 <?php echo number_format($r['COMPROMISO']); ?>
                             </td>
-                            <td class="align-middle text-right">
+                            <td class="align-middle text-right content-table">
                                 <input type="hidden" id="atencion_<?php echo $n?>"
                                     value="<?php echo number_format($r['ATENCION']); ?>" />
                                 <?php echo number_format($r['ATENCION']); ?>
                             </td>
-                            <td class="align-middle text-right">
+                            <td class="align-middle text-right content-table">
                                 <input type="hidden" id="devengado_<?php echo $n?>"
                                     value="<?php echo number_format($r['DEVENGADO']); ?>" />
                                 <?php echo number_format($r['DEVENGADO']); ?>
                             </td>
-                            <td class="align-middle text-right">
+                            <td class="align-middle text-right content-table">
                                 <input type="hidden" id="girado_<?php echo $n?>"
                                     value="<?php echo number_format($r['GIRADO']); ?>" />
                                 <?php echo number_format($r['GIRADO']); ?>
                             </td>
-                            <td class="align-middle text-right">
+                            <td class="align-middle text-right content-table">
                                 <input type="hidden" id="avance_<?php echo $n?>"
                                     value="<?php echo number_format($r['AVANCE'],1); ?>" />
                                 <?php echo number_format($r['AVANCE'],1); ?>
@@ -1669,7 +1672,7 @@ else if( isset($_POST['resumen_municipalidad']) ){
 <html>
 
 <head>
-    <title>Mi página</title>
+    <title>Consulta</title>
     <link rel="stylesheet" href="../../dom/css/consulta.css">
     <style>
     .card-header {
@@ -1721,12 +1724,12 @@ else if( isset($_POST['resumen_municipalidad']) ){
                         </div>
                         <div class="caption text-left card-body" style="color:white;font-weight: bold">
                             <h4 class="card-body-content row">
-                                <div class="col-5">
+                                <div class="col-7">
                                     <i class="glyphicon glyphicon-file light-red lighter bigger-120"></i>
                                     &nbsp;Presupuesto:
 
                                 </div>
-                                <div class="col-7">
+                                <div class="col-5">
 
                                     <?php echo number_format($r['PRESUPUESTO']); ?>
 
@@ -1735,12 +1738,12 @@ else if( isset($_POST['resumen_municipalidad']) ){
 
                             </h4>
                             <h4 class="card-body-content row">
-                                <div class="col-5">
+                                <div class="col-7">
                                     <i class="glyphicon glyphicon glyphicon-list-alt light-red lighter bigger-120"></i>
                                     &nbsp;Ejecución:
 
                                 </div>
-                                <div class="col-7">
+                                <div class="col-5">
 
                                     <?php echo number_format($r['EJECUCION']); ?>
 
@@ -1749,13 +1752,13 @@ else if( isset($_POST['resumen_municipalidad']) ){
 
                             </h4>
                             <h4 class="card-body-content row">
-                                <div class="col-5">
+                                <div class="col-7">
                                     <i
                                         class="glyphicon glyphicon glyphicon-folder-close light-red lighter bigger-120"></i>
                                     &nbsp;Proyectos:
 
                                 </div>
-                                <div class="col-7">
+                                <div class="col-5">
 
                                     <?php echo number_format($r['CANTIDAD']); ?>
 

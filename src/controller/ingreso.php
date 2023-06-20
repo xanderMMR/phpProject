@@ -544,15 +544,15 @@ else if ( isset($_POST['resultado']) ){
                     </tr>
                     
                     <tr style="background-color: #002747;">
-                        <th style="color:black;font-weight:bold"></th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" align="center">N°</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center"> 
+                        <th style="color:black;font-weight:bold;background-color: #002747;"></th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" align="center">N°</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center"> 
                             <?php echo $textoCabecera ?>
                             <input type="hidden" id="ultimaColumna" style="color:black!important" value="<?php echo $ultimaBusqueda ?>"> 
                         </th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">PIA</th>           
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">PIM</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Recaudado</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">PIA</th>           
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">PIM</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">Recaudado</th>
                     </tr>
                 </thead>
             <tbody>
@@ -563,17 +563,17 @@ else if ( isset($_POST['resultado']) ){
                               <input type="radio" data-num="<?php echo $n ?>" data-name="<?php echo $r['CAMPO']; ?>" name="radioGrupo" value="<?php echo $r['CAMPO']; ?>">
                           </td>
                              
-                          <td class="align-middle text-left"> <?php echo $n; ?> </td>          
-                          <td class="align-middle text-left"> <?php echo $r['CAMPO'] ?> </td>
-                          <td class="align-middle text-right"> 
+                          <td class="align-middle text-left content-table"> <?php echo $n; ?> </td>          
+                          <td class="align-middle text-left content-table"> <?php echo $r['CAMPO'] ?> </td>
+                          <td class="align-middle text-right content-table"> 
                               <input type="hidden" id="pia_<?php echo $n?>" value="<?php echo number_format($r['PIA']); ?>"/>
                               <?php echo number_format($r['PIA']); ?> 
                           </td>
-                          <td class="align-middle text-right"> 
+                          <td class="align-middle text-right content-table"> 
                               <input type="hidden" id="pim_<?php echo $n?>" value="<?php echo number_format($r['PIM']); ?>"/>
                               <?php echo number_format($r['PIM']); ?> 
                           </td>
-                          <td class="align-middle text-right"> 
+                          <td class="align-middle text-right content-table"> 
                               <input type="hidden" id="recaudado_<?php echo $n?>" value="<?php echo number_format($r['RECAUDADO']); ?>"/>
                               <?php echo number_format($r['RECAUDADO']); ?> 
                           </td>

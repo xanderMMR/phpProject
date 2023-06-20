@@ -132,42 +132,42 @@ and open the template in the editor.
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <div class="text-left tituloLogin">
-                            <h5> Crear cuenta de usuario </h5>
+                            <h5 class="h5titulo"> Crear cuenta de usuario </h5>
                             <hr class="lineaLogin" color="green">
                         </div>
                         <div class="d-flex flex-column text-center panelRegistro">
                             
                             <div class="col-md-12">&nbsp;</div>
                             <div class="form-group">
-                                <input maxlength="50" onpaste="return false" autocomplete="off" type="text" class="form-control" id="nombre" placeholder="Nombre" onkeypress="return letra(event)">
+                                <input maxlength="50" onpaste="return false" autocomplete="off" type="text" class="form-control inputAcceso" id="nombre" placeholder="Nombre" onkeypress="return letra(event)">
                                 <label class="obligatorio" id="l_nombre"></label>
                             </div>
                             <div class="form-group">
-                                <input maxlength="50" onpaste="return false" autocomplete="off" type="text" class="form-control" id="paterno" placeholder="Apellido Paterno" onkeypress="return letra(event)">
+                                <input maxlength="50" onpaste="return false" autocomplete="off" type="text" class="form-control inputAcceso" id="paterno" placeholder="Apellido Paterno" onkeypress="return letra(event)">
                                 <label class="obligatorio" id="l_paterno"></label>
                             </div>
                             <div class="form-group">
-                                <input maxlength="50" onpaste="return false" autocomplete="off" type="text" class="form-control" id="materno" placeholder="Apellido Materno" onkeypress="return letra(event)">
+                                <input maxlength="50" onpaste="return false" autocomplete="off" type="text" class="form-control inputAcceso" id="materno" placeholder="Apellido Materno" onkeypress="return letra(event)">
                                 <label class="obligatorio" id="l_materno"></label>
                             </div>
                             <div class="form-group">
-                                <input maxlength="8" onpaste="return false" autocomplete="off" type="text" class="form-control" id="dni" placeholder="DNI" onkeypress="return numero(event)">
+                                <input maxlength="8" onpaste="return false" autocomplete="off" type="text" class="form-control inputAcceso" id="dni" placeholder="DNI" onkeypress="return numero(event)">
                                 <label class="obligatorio" id="l_dni"></label>
                             </div>
                             <div class="form-group">
-                                <input maxlength="15" onpaste="return false" autocomplete="off" type="text" class="form-control" id="telefono" placeholder="Teléfono" onkeypress="return numero(event)">
+                                <input maxlength="15" onpaste="return false" autocomplete="off" type="text" class="form-control inputAcceso" id="telefono" placeholder="Teléfono" onkeypress="return numero(event)">
                                 <label class="obligatorio" id="l_telefono"></label>
                             </div>
                             <div class="form-group">
-                                <input maxlength="100" onpaste="return false" autocomplete="off" type="text" class="form-control" id="correo" placeholder="Correo electrónico" onkeypress="return alfanum(event)">
+                                <input maxlength="100" onpaste="return false" autocomplete="off" type="text" class="form-control inputAcceso" id="correo" placeholder="Correo electrónico" onkeypress="return alfanum(event)">
                                 <label class="obligatorio" id="l_correo"></label>
                             </div>
                             <div class="form-group">
-                                <input maxlength="50" onpaste="return false" autocomplete="off" type="password" class="form-control" id="clave" placeholder="Clave">
+                                <input maxlength="50" onpaste="return false" autocomplete="off" type="password" class="form-control inputAcceso" id="clave" placeholder="Clave">
                                 <label class="obligatorio" id="l_clave"></label>
                             </div>
                             <div class="form-group">
-                                <select class="form-control" id="municipalidad">
+                                <select class="form-control inputAcceso" id="municipalidad">
                                     <option value="-1">Seleccione una municipalidad</option>
                                     <option value="-2">OTRO</option>
                                 </select>
@@ -178,7 +178,7 @@ and open the template in the editor.
                                 <label class="obligatorio" id="l_otro"></label>
                             </div>
                             <div class="col-md-12">&nbsp;</div>
-                            <button type="button" id="buttonRegister" class="btn btn-info btn-block btn-round">Registrarme</button>
+                            <button type="button" id="buttonRegister" class="btn btn-info btn-block btn-round inputAcceso">Registrarme</button>
                             
                         </div>
                     </div>
@@ -197,18 +197,18 @@ and open the template in the editor.
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <div class="text-left tituloLogin">
-                            <h5> Recuperar mi contraseña </h5>
+                            <h5 class="h5titulo"> Recuperar mi contraseña </h5>
                             <hr class="lineaLogin" color="green">
                         </div>
                         <div class="d-flex flex-column text-center panelRegistro">
                             
                             <div class="col-md-12">&nbsp;</div>
                             <div class="form-group">
-                                <input maxlength="50" onpaste="return false" autocomplete="off" type="text" class="form-control" id="correoRegistrado" placeholder="Ingrese su correo electrónico registrado" onkeypress="return alfanum(event)">
+                                <input maxlength="50" onpaste="return false" autocomplete="off" type="text" class="form-control inputRecuperar" id="correoRegistrado" placeholder="Ingrese su correo electrónico registrado" onkeypress="return alfanum(event)">
                                 <label class="obligatorio" id="l_correoRegistrado"></label>
                             </div>
                             <div class="col-md-12">&nbsp;</div>
-                            <button type="button" id="buttonRecuperar" class="btn btn-info btn-block btn-round">Recuperar</button>
+                            <button type="button" id="buttonRecuperar" class="btn btn-info btn-block btn-round inputAcceso">Recuperar</button>
                             
                         </div>
                     </div>

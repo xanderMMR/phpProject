@@ -703,31 +703,30 @@ else if ( isset($_POST['resultado']) ){
                         -->
                         <th> </th>
                     </tr>
-                    
                     <tr style="background-color: #002747;">
-                        <th rowspan="2" style="color:black;font-weight:bold"></th>
-                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" align="center">N°</th>
-                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center"> 
+                        <th rowspan="2" style="color:black;font-weight:bold; background-color: #002747;"></th>
+                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" align="center">N°</th>
+                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center"> 
                             <?php echo $textoCabecera ?>
                             <input type="hidden" id="ultimaColumna" style="color:black!important" value="<?php echo $ultimaBusqueda ?>"> 
                         </th>
                         <!--
-                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Costo</th>
+                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">Costo</th>
                         -->
-                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Ejecución al año <?php echo $anioB ?></th>
-                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Ejecución al año <?php echo $anioA ?></th>
+                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">Ejecución al año <?php echo $anioB ?></th>
+                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">Ejecución al año <?php echo $anioA ?></th>
                         
-                        <th colspan="3" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center"><?php echo $anio ?></th>      
+                        <th colspan="3" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center"><?php echo $anio ?></th>      
                         
-                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Ejecución Total</th>
+                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">Ejecución Total</th>
                         <!--
-                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Avance % Total</th>
+                        <th rowspan="2" style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">Avance % Total</th>
                         -->
                     </tr>
                     <tr style="background-color: #002747;">
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">PIA</th>           
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">PIM</th>
-                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important" class="text-center">Devengado</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;;" class="text-center">PIA</th>           
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">PIM</th>
+                        <th style="font-weight:bold;color:white;font-size: 16px!important;vertical-align: middle!important; background-color: #002747;" class="text-center">Devengado</th>
                     </tr>
                 </thead>
             <tbody>
@@ -738,8 +737,8 @@ else if ( isset($_POST['resultado']) ){
                               <input type="radio" data-num="<?php echo $n ?>" data-name="<?php echo $r['CAMPO']; ?>" name="radioGrupo" value="<?php echo $r['CAMPO']; ?>">
                           </td>
                              
-                          <td class="align-middle text-left"> <?php echo $n; ?> </td>          
-                          <td class="align-middle text-left"> 
+                          <td class="align-middle text-left content-table"> <?php echo $n; ?> </td>          
+                          <td class="align-middle text-left content-table"> 
                               <?php echo $r['CAMPO'] ?> 
                               <?php if($url==1 && isset($r['IDDATOS'])){
                                   if($r['A_LINKFORMATO12B']!=""){
@@ -805,27 +804,27 @@ else if ( isset($_POST['resultado']) ){
                               <?php //echo number_format($r['COSTO']); ?> 
                           </td>
                           -->
-                          <td class="align-middle text-right"> 
+                          <td class="align-middle text-right content-table"> 
                               <input type="hidden" id="ejecucionA_<?php echo $n?>" value="<?php echo number_format($r['EJECUCION_ANIO_A']); ?>"/>
                               <?php echo number_format($r['EJECUCION_ANIO_A']); ?> 
                           </td>
-                          <td class="align-middle text-right"> 
+                          <td class="align-middle text-right content-table"> 
                               <input type="hidden" id="ejecucionB_<?php echo $n?>" value="<?php echo number_format($r['EJECUCION_ANIO_B']); ?>"/> 
                               <?php echo number_format($r['EJECUCION_ANIO_B']); ?>
                           </td>
-                          <td class="align-middle text-right"> 
+                          <td class="align-middle text-right content-table"> 
                               <input type="hidden" id="pia_<?php echo $n?>" value="<?php echo number_format($r['PIA']); ?>"/> 
                               <?php echo number_format($r['PIA']); ?>
                           </td>
-                          <td class="align-middle text-right"> 
+                          <td class="align-middle text-right content-table"> 
                               <input type="hidden" id="pim_<?php echo $n?>" value="<?php echo number_format($r['PIM']); ?>"/> 
                               <?php echo number_format($r['PIM']); ?> 
                           </td>
-                          <td class="align-middle text-right">
+                          <td class="align-middle text-right content-table">
                               <input type="hidden" id="devengado_<?php echo $n?>" value="<?php echo number_format($r['DEVENGADO']); ?>"/>
                               <?php echo number_format($r['DEVENGADO']); ?>
                           </td>
-                          <td class="align-middle text-right"> 
+                          <td class="align-middle text-right content-table"> 
                               <input type="hidden" id="ejecucionTotal_<?php echo $n?>" value="<?php echo number_format($r['EJECUCION_TOTAL']); ?>"/>
                               <?php echo number_format($r['EJECUCION_TOTAL']); ?>
                           </td>
