@@ -1,13 +1,10 @@
-.login,
-.image {
+html,
+body {
+    background-color: #f8f9fa;
     min-height: 100vh;
+    margin: 0;
+    overflow: auto
 }
-
-/* .bg-image {
-        background-image: url('../img/consultas.jpg');
-        background-size: cover;
-        background-position: center center;
-    } */
 
 .buttonLogin {
     background-color: #30536E !important;
@@ -16,12 +13,36 @@
 
 .display-4 {
     font-weight: bold !important;
+    font-size: 4em;
+    text-align: center;
+
+}
+
+.text-design {
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.input-form {
+    font-size: 2em;
+    margin-top: 7%;
+    padding: 1%;
 }
 
 .labelRegistro {
-    margin-top: 20px;
+    margin-top: 3%;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.buttonLogin {
+    margin-top: 7%;
+    font-size: 2em;
+}
+
+.labelRegistro {
+    font-size: 2em;
 }
 
 .panelLogin {
@@ -35,12 +56,11 @@
 }
 
 .tituloLogin {
-    margin-top: 20px;
     padding-left: 20px !important;
 }
 
 .panelRegistro {
-    padding: 20px !important;
+    /* padding: 20px !important; */
 }
 
 
@@ -55,92 +75,172 @@
     color: #6c757d !important;
 }
 
+.alert {
+    font-size: 2em;
+}
 
-@media (min-width: 800px)and (max-width: 1024px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     .display-4 {
-        font-size: 7em;
+        font-size: 2.5em;
         text-align: center;
 
     }
 
     .text-design {
-        font-size: 3em;
+        font-size: 1em;
         text-align: center;
-        
+
     }
-    
+
 
     .input-form {
-        font-size: 3em;
+        font-size: 1.5em;
         margin-top: 7%;
-        padding: 70px;
-        height: 90px;
+        padding: 1%;
     }
 
-    .buttonLogin{
+    .buttonLogin {
         margin-top: 7%;
-        font-size: 3em;
+        font-size: 1.5em;
     }
-    .labelRegistro{
-        font-size: 3em;
+
+    .labelRegistro {
+        font-size: 1.5em;
     }
-    .container {
+
+    .panelLogin {
+        width: 70%;
+    }
+
+    .container-fluid {
         width: 100%;
-        padding: 5% 0% 5% 0%;
-
+        margin-left: 0%;
+        margin-right: 0%;
     }
+}
+
+@media screen and (min-width: 768px)and (max-width: 992px) {
 
     html,
     body {
+        background-image: url('../img/consultas.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
         height: 100%;
     }
-    .form-group{
+
+    .container-fluid {
+        height: 80%;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .panelLogin {
+        display: -ms-flexbox;
+        border: 2px solid black;
+        border-radius: 2%;
+    }
+    .alert{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 2000px) {
+    body {
+        background-image: url('');
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+        margin: 0;
+    }
+
+    .display-4 {
+        font-size: 2.5em;
+        text-align: center;
+
+    }
+
+    .text-design {
+        font-size: 1em;
+        text-align: center;
+
+    }
+
+
+    .input-form {
+        font-size: 1.5em;
+        margin-top: 7%;
+        padding: 1%;
+    }
+
+    .buttonLogin {
+        margin-top: 7%;
+        font-size: 1.5em;
+    }
+
+    .labelRegistro {
+        font-size: 1.5em;
+    }
+
+
+    .form-group {
         margin-top: 5%;
     }
+
     .container-fluid {
         display: flex;
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
         height: 100vh;
-        max-width: 100%;
     }
-    .h5titulo{
+
+    .h5titulo {
         font-size: 3em;
     }
-    .modal-dialog{
+
+    .modal-dialog {
         max-width: 70%;
     }
-   .inputAcceso{
-    font-size: 2.2em;
-   }
-   .inputRecuperar{
-    font-size: 2em;
-   }
-    /* #bg-image {
+
+    .inputAcceso {
+        font-size: 2.2em;
+    }
+
+    .inputRecuperar {
+        font-size: 2em;
+    }
+
+    .bg-image {
         background-image: url('../img/consultas.jpg');
         background-size: cover;
         background-position: center center;
-    } */
+    }
+    .alert{
+        font-size: 1.2em;
+    }
 
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1200px) {
     .display-4 {
         font-size: 3.5em;
         text-align: left;
 
     }
 
-    .text-design {
-        font-size: 1em;
-        text-align: left;
-    }
+    
 
-    #bg-image {
+    .bg-image {
         background-image: url('../img/consultas.jpg');
+        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
+
     }
 
     .text-design {
@@ -148,17 +248,23 @@
         text-align: left;
 
     }
+
     .input-form {
         font-size: 1.2em;
 
     }
 
-    .buttonLogin{
+    .buttonLogin {
         font-size: 1.2em;
     }
-    .labelRegistro{
+
+    .labelRegistro {
         font-size: 1.2em;
     }
+    .alert{
+        font-size: 1.2em;
+    }
+
     .container {
         max-width: 100%;
 
@@ -172,8 +278,20 @@
         padding-bottom: 2rem !important;
     }
 
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: 100vh;
+        max-width: 100%;
+    }
 
     .panelLogin {
         margin-top: 0%;
     }
+
+    body {}
+
+    .container-fluid {}
 }

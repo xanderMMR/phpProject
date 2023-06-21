@@ -71,10 +71,22 @@ and open the template in the editor.
             background: #eeeeee;
         }
 
-
         .botonSalir {
-            font-size: 11px !important;
-            width: 100px !important;
+            font-size: 2em;
+        }
+
+        .header-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+
+        @media (min-width: 1200px) {
+            .botonSalir {
+                font-size: 1em;
+            }
         }
     </style>
 
@@ -308,6 +320,10 @@ and open the template in the editor.
             margin-right: 10%
         }
 
+        .btn-lineaTiempo {
+            margin-bottom: 3%;
+        }
+
         @media (min-width: 200px) and (max-width: 1023px) {
             .container {
                 min-width: 100%;
@@ -369,6 +385,10 @@ and open the template in the editor.
                 flex-wrap: wrap;
                 justify-content: center;
             }
+
+            .btn-descarga {
+                font-size: 1.5em;
+            }
         }
 
         @media (min-width: 1024px) {
@@ -399,21 +419,20 @@ and open the template in the editor.
 
     <div class="wrap" style='background: #f2f2f2!important;'>
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex justify-content-md-end">
-                    <div class="reg">
-                        <form method="POST" action="salir.php">
-                            <button class="btn btn-sm btn-white botonSalir">Cerrar Sesión</button>
-                        </form>
-                        <!--<p class="mb-0"><a href="#" class="mr-2">Sign Up</a></p>-->
-                    </div>
+            <div class="row header-row">
 
-                    <div class="reg">
-                        <button onclick="history.back();" class="btn btn-sm btn-danger botonSalir">Regresar</button>
-                    </div>
-
-
+                <div class="reg">
+                    <form method="POST" action="salir.php">
+                        <button class="btn btn-white botonSalir">Cerrar Sesión</button>
+                    </form>
+                    <!--<p class="mb-0"><a href="#" class="mr-2">Sign Up</a></p>-->
                 </div>
+
+                <div class="reg">
+                    <button onclick="history.back();" class="btn btn-danger botonSalir">Regresar</button>
+                </div>
+
+
 
             </div>
         </div>
@@ -430,7 +449,7 @@ and open the template in the editor.
                     <div class="col-md-12">
                         <div id='divLineaTiempo' class="btn-lineaTiempo">
                             <a id='hrefLink' target="_blank" href='#'>
-                                <button class='btn btn-success'
+                                <button class='btn btn-success btn-descarga'
                                     style='border-radius:10px;border:none;color:white!important;background:rgba(255,0,38,0.89)!important'>
                                     <i class="fa fa-download" aria-hidden="true"></i> Descargar línea de tiempo
                                 </button>
