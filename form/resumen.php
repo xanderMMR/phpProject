@@ -402,6 +402,12 @@ and open the template in the editor.
             .btn-descarga {
                 font-size: 1.5em;
             }
+            .label-body {
+                font-size: 30px;
+            }
+            .divubigeo {
+                font-size: 1.7em;
+            }
         }
 
         @media (min-width: 1024px) {
