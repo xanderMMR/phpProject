@@ -14,7 +14,7 @@
 
             <div class="col-md-12">
                 <center>
-                    <label style="font-size:30px;color:#002747"><b>EJECUCIÓN DEL GASTO</b></label>
+                    <label style="font-family: Arial; font-weight: normal; font-size:30px;color:#002747"><b>EJECUCIÓN DEL GASTO</b></label>
                 </center>
             </div>
 

@@ -1,9 +1,38 @@
+.nv-header {
+    background: #a23f25;
+    border-radius: 0%
+}
+
+.nav-item {
+    margin-right: 1%;
+    font-family: Arial;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    
+}
+
+
+.nav-link {
+    color:#fff;
+    font-weight:bold;
+}
+
 .btn-descarga {
     color: #fff;
     background-color: #5cb85c;
     border-color: #4cae4c;
     font-size: 1.3em;
-    font-weight: bold;
+    font-weight: bolder;
+}
+
+.btn-group>.btn:first-child {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
 }
 
 .nombreFiltro {
@@ -11,13 +40,16 @@
     color: black;
     font-size: 18px;
 }
+
 select {
     height: 30px !important;
     font-size: 10px !important;
 }
+
 .form-select {
     height: 50px !important;
 }
+
 .btn-filtro {
     color: #fff;
     font-size: 1.5em;
@@ -26,9 +58,11 @@ select {
 .btn-secondary {
     font-size: 1.4em;
 }
-.content-table{
+
+.content-table {
     font-size: 1.5em;
 }
+
 table {
     border-style: solid;
     border-top-width: 1px;
@@ -46,10 +80,12 @@ td {
     border: 1px solid black;
     padding: 8px;
 }
-.custom-datatable{
+
+.custom-datatable {
     background-color: white;
 }
-.row-table{
+
+.row-table {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -60,15 +96,18 @@ td {
     align-content: center;
     justify-content: center;
 }
-.fondo-row-table{
+
+.fondo-row-table {
     background-color: #eeeeee;
 }
+
 div.dataTables_wrapper div.dataTables_filter label {
     font-weight: bold;
     white-space: nowrap;
     text-align: left;
     font-size: 1.5em;
 }
+
 div.dataTables_wrapper div.dataTables_filter input {
     margin-left: 0.5em;
     display: inline-block;

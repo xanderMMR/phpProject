@@ -78,8 +78,8 @@ and open the template in the editor.
         .header-row {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
             flex-direction: row;
+            justify-content: flex-end;
         }
 
 
@@ -121,6 +121,9 @@ and open the template in the editor.
         }
 
 
+        .label-body {
+            font-size: 22px;
+        }
 
         .divpresupuesto {
             background: #2784D3;
@@ -266,12 +269,12 @@ and open the template in the editor.
         .divanio {
             background: #39658E !important;
             border-radius: 20px;
-            width: 40%;
+            width: 30%;
             height: auto;
             font-family: 'Cabin', Helvetica, Arial, Lucida, sans-serif;
             font-weight: bold;
             color: white !important;
-            font-size: 4em;
+            font-size: 3em;
             margin-bottom: 5%
         }
 
@@ -279,11 +282,13 @@ and open the template in the editor.
             background: rgb(2, 0, 36);
             background: linear-gradient(rgba(93, 247, 96, 1) 0%, rgba(0, 255, 166, 1) 100%);
             border-radius: 20px;
-            padding: 10px;
+            /* padding: 1% 0% 1% 0%; */
             font-family: 'Cabin', Helvetica, Arial, Lucida, sans-serif;
-            font-size: 2.5em;
+            font-size: 1.3em;
             font-weight: bold;
+            width: 80%;
             margin-bottom: 20px;
+
         }
 
         .detalle-section {
@@ -308,6 +313,14 @@ and open the template in the editor.
 
         .content-body {
             font-size: 2.5em;
+            margin-top: 20px;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            align-content: center;
+            justify-content: center;
         }
 
         .margin-div {
@@ -331,7 +344,7 @@ and open the template in the editor.
             }
 
             .string-municipalidad {
-                font-size: 5em;
+                font-size: 2em;
             }
 
             .col-md-4 {
@@ -382,8 +395,8 @@ and open the template in the editor.
 
             .row-cabecera {
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
+                align-items: center;
             }
 
             .btn-descarga {
@@ -409,6 +422,16 @@ and open the template in the editor.
                 font-size: 1.5em;
             }
 
+            .string-municipalidad {
+                margin-bottom: 20px;
+            }
+
+            .heading-section.heading-section-white h2 {
+                font-size: 2.8em;
+                color: #fff;
+
+            }
+
         }
     </style>
 
@@ -428,9 +451,9 @@ and open the template in the editor.
                     <!--<p class="mb-0"><a href="#" class="mr-2">Sign Up</a></p>-->
                 </div>
 
-                <div class="reg">
+                <!-- <div class="reg">
                     <button onclick="history.back();" class="btn btn-danger botonSalir">Regresar</button>
-                </div>
+                </div> -->
 
 
 
@@ -466,7 +489,7 @@ and open the template in the editor.
                         </div>
 
                     </div>
-                    <div class="col-12">
+                    <div class="col-md-12">
                         <div class="row row-cabecera">
                             <div class="col-lg-4 col-md-6">
                                 <div class="divubigeo">
@@ -492,25 +515,25 @@ and open the template in the editor.
                         <?php echo $_GET['muni']; ?>
                     </h2>
                     <div class="row content-body">
-                        <div class="col-lg-6 margin-div">
-                            <div class="divpresupuesto">
+                        <div class="col-lg-4 margin-div">
+                            <div class="divpresupuesto label-body">
                                 <p id="labelPresupuesto"></p>
                                 <p> Presupuesto Actualizado de Inversiones (PIM)</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 margin-div">
-                            <div class="divejecucion">
+                        <div class="col-lg-4 margin-div">
+                            <div class="divejecucion label-body">
                                 <p id="labelEjecucion"></p>
                                 <p> Ejecución de inversiones (Devengado)</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 margin-div">
-                            <div class="divTotalProyecto">
+                        <div class="col-lg-4 margin-div">
+                            <div class="divTotalProyecto label-body">
                                 <p id="labelTotalProyecto"></p>
                             </div>
                         </div>
                         <div class="col-lg-6 margin-div">
-                            <div class="divinicialinversion">
+                            <div class="divinicialinversion label-body">
                                 <p id="labelInicialInversion"></p>
                                 <p> Presupuesto Inicial de Inversiones (PIA)</p>
                             </div>
@@ -521,12 +544,12 @@ and open the template in the editor.
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 margin-div">
-                            <div class="divinversionpim">
+                            <div class="divinversionpim label-body">
                                 <p id="labelInversionPIM"></p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 margin-div">
-                            <div class="divrubros">
+                            <div class="divrubros label-body">
                                 <p style="color:black!important;font-size:22px!important"><u>Presupuesto por
                                         Rubro</u></p>
                                 <p id="labelRubros" style="color:black!important"></p>
@@ -534,19 +557,19 @@ and open the template in the editor.
                         </div>
 
                         <div class="col-lg-6 col-md-12 margin-div">
-                            <div class="divpresupuestofuncion">
+                            <div class="divpresupuestofuncion label-body">
                                 <p style="color:black!important;font-size:22px!important">Presupuesto por Función
                                 </p>
                                 <p id="presupuestoFuncion" style="color:white!important"></p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 margin-div">
-                            <div class="divotros">
+                            <div class="divotros label-body">
                                 <p id="labelotros" style="color:white!important"></p>
                             </div>
                         </div>
                         <div class="col-lg-12 margin-div">
-                            <div class="divdatosmontos">
+                            <div class="divdatosmontos label-body">
                                 <p id="labelDatosMontos"></p>
                             </div>
                         </div>

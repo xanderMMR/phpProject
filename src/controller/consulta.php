@@ -1680,14 +1680,19 @@ else if( isset($_POST['resumen_municipalidad']) ){
     }
 
     .card-body {
-        height: 35%;
+        height: 33%;
     }
     .card-footer{
-        height: 30%;
+        height: 37%;
     }
 
     .card-body-content {
-        margin-bottom: 7%;
+        margin-bottom: 5%;
+        font-family: Arial;
+        font-weight: 500;
+        line-height: 1.1;
+        font-size: 18px;
+        color: inherit;
     }
     .thumbnail-style{
         background-size: cover;
@@ -1695,11 +1700,20 @@ else if( isset($_POST['resumen_municipalidad']) ){
         background-repeat: no-repeat;
 
     }
+    .progress{
+        height: 20px;
+    }
+    .label-avance{
+        font-size: 20px;
+    }
+    .label-porcentaje{
+        font-size: 25px;
+    }
     </style>
 </head>
 
 <body>
-    <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
 
         <div class="row">
             <a target="_blank"
@@ -1717,7 +1731,7 @@ else if( isset($_POST['resumen_municipalidad']) ){
                             <h4 style="color:white;font-weight: bold;font-family:'Zilla Slab',Georgia,'Times New Roman',serif"
                                 id="thumbnail-label"><?php echo $r['MUNICIPALIDAD']; ?></h4>
                             <div class="position-relative"
-                                style="color:black!important;background:white!important;border-radius: 10px;font-size:12px!important;padding:5px!important">
+                                style="color:black!important;background:white!important;border-radius: 10px;font-size:12px!important;padding:5px!important;font-family: Arial;">
                                 <b>Departamento: </b><?php echo $r['DEPARTAMENTO'] ?>
                                 ,<b> Provincia: </b><?php echo $r['PROVINCIA'] ?>
                             </div>
@@ -1771,10 +1785,10 @@ else if( isset($_POST['resumen_municipalidad']) ){
                         </div>
                         <div class="caption card-footer text-center" style="color:white;font-weight: bold">
                             <ul class="list-inline">
-                                <h4> <i class="glyphicon glyphicon-signal light-red lighter bigger-120"></i>&nbsp;
+                                <h4 class="label-avance"> <i class="glyphicon glyphicon-signal light-red lighter bigger-120"></i>&nbsp;
                                     Avance: </h4>
                                 <li></li>
-                                <h2> <?php echo $r['AVANCE']." %"; ?></h2>
+                                <h2 class="label-porcentaje"> <?php echo $r['AVANCE']." %"; ?></h2>
                                 <div class="progress">
                                     <div class="progress-bar-info" role="progressbar" aria-valuenow="70"
                                         aria-valuemin="0" aria-valuemax="100"
