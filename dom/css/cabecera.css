@@ -39,7 +39,8 @@ body {
     margin-left: 0px;
 }
 .font-time{
-    margin-right: 1%;
+    margin-right: 1%
+    ;
 }
 @media screen and (min-width: 768px) {
     .navbar .navbar-nav {
