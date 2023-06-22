@@ -2077,7 +2077,7 @@ function resumenItem($lista,$titulo,$campoBD,$presupuestoMuni){
             }
         ?>
 
-<div class="col-lg-4 col-md-12" style="display: flex;  justify-content: center; align-items: center;">
+<div class="col-xl-4 col-lg-6 col-md-12" style="display: flex;  justify-content: center; align-items: center;">
     <div class="row card-content">
         <div class="col-md-12">
             <div class="thumbnail detalle-imagen"

@@ -82,21 +82,29 @@ and open the template in the editor.
             justify-content: flex-end;
         }
 
-
-        @media (min-width: 1200px) {
-            .botonSalir {
-                font-size: 1em;
-            }
-        }
     </style>
 
     <style>
+        .header-label {
+            font-size: 3em;
+        }
+
+        .body-caption {
+            font-size: 2.5em;
+            height: 30%;
+        }
+
+        .footer-caption {
+            font-size: 2.5em;
+        }
+
         .thumbnail {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
             transition: 0.3s;
             min-width: 100%;
             border-radius: 5px;
             font-size: 11px;
+            height: 100vh;
         }
 
         .thumbnail-description {}
@@ -267,13 +275,13 @@ and open the template in the editor.
         }
 
         .divanio {
-            background: #39658E !important;
+            background: #39658E;
             border-radius: 20px;
             width: 30%;
             height: auto;
             font-family: 'Cabin', Helvetica, Arial, Lucida, sans-serif;
             font-weight: bold;
-            color: white !important;
+            color: white;
             font-size: 3em;
             margin-bottom: 5%
         }
@@ -302,7 +310,7 @@ and open the template in the editor.
         }
 
         .header-caption {
-            height: 50% !important
+            height: 50%
         }
 
         .divTituloResumen {
@@ -337,10 +345,59 @@ and open the template in the editor.
             margin-bottom: 3%;
         }
 
-        @media (min-width: 200px) and (max-width: 1023px) {
+        @media (min-width: 200px) and (max-width: 600px) {
+            .divanio {
+                background: #39658E;
+                border-radius: 20px;
+                width: 100%;
+                height: auto;
+                font-family: 'Cabin', Helvetica, Arial, Lucida, sans-serif;
+                font-weight: bold;
+                color: white;
+                font-size: 3em;
+                margin-bottom: 5%
+            }
+
+            .divubigeo {
+                width: 100%;
+            }
+
+            .card-content {
+                width: 100%;
+                margin-bottom: 3%;
+            }
+
+
+            .header-caption {
+                font-size: 3em;
+            }
+
+            .body-caption {
+                font-size: 2.5em;
+                height: 30%;
+            }
+
+            .footer-caption {
+                font-size: 2.5em;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 1024px) {
             .container {
                 min-width: 100%;
 
+            }
+
+            .divanio {
+                background: #39658E;
+                border-radius: 20px;
+                width: 100%;
+                height: auto;
+                font-family: 'Cabin', Helvetica, Arial, Lucida, sans-serif;
+                font-weight: bold;
+                color: white;
+                font-size: 3em;
+                margin-bottom: 5%
             }
 
             .string-municipalidad {
@@ -352,7 +409,7 @@ and open the template in the editor.
             }
 
             .card-content {
-                width: 80%;
+                width: 100%;
                 margin-bottom: 3%;
             }
 
@@ -374,19 +431,20 @@ and open the template in the editor.
             }
 
             .header-caption {
-                height: auto !important
+                height: auto
             }
 
             .header-label {
-                font-size: 3em;
+                font-size: 2em;
             }
 
             .body-caption {
-                font-size: 2.8em;
+                font-size: 1.5em;
+                height: 30%;
             }
 
             .footer-caption {
-                font-size: 2.8em;
+                font-size: 1.5em;
             }
 
             .content-body {
@@ -402,9 +460,11 @@ and open the template in the editor.
             .btn-descarga {
                 font-size: 1.5em;
             }
+
             .label-body {
                 font-size: 30px;
             }
+
             .divubigeo {
                 font-size: 1.7em;
             }
@@ -416,13 +476,16 @@ and open the template in the editor.
 
             }
 
+
+            .body-caption {
+                font-size: 1.2em;
+                height: 30%;
+            }
+
             .card-content {
                 width: 100%;
             }
 
-            .body-caption {
-                font-size: 1.5em;
-            }
 
             .footer-caption {
                 font-size: 1.5em;
@@ -437,7 +500,15 @@ and open the template in the editor.
                 color: #fff;
 
             }
-
+            .header-label {
+                font-size: 1.4em;
+            }
+            .body-caption{
+                font-size: 1.3;
+            }
+            .botonSalir {
+                font-size: 1em;
+            }
         }
     </style>
 
