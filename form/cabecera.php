@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-expand-md nv-header" style="margin:0px">
+    <nav class="navbar nv-header" style="margin:0px">
         <div class="container">
             <button class="navbar-toggler toggler-button btn-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -20,7 +20,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item nav-ejec">
                         <a class="nav-link font-link" href="consulta.php">EJECUCIÓN DEL GASTO</a>
                     </li>
                     <li class="nav-item">
@@ -35,6 +35,9 @@
                     <li class="nav-item">
                         <a class="nav-link font-link" href="proyectos.php">PROYECTOS</a>
                     </li>
+                    <div>
+
+                    </div>
                 </ul>
             </div>
             <label class="font-time">
