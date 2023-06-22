@@ -2077,7 +2077,7 @@ function resumenItem($lista,$titulo,$campoBD,$presupuestoMuni){
             }
         ?>
 
-<div class="col-lg-4 col-md-12" style="display: flex;  justify-content: center; align-items: center;">
+<div class="col-xl-4 col-lg-6 col-md-12" style="display: flex;  justify-content: center; align-items: center;">
     <div class="row card-content">
         <div class="col-md-12">
             <div class="thumbnail detalle-imagen"
@@ -2089,11 +2089,11 @@ function resumenItem($lista,$titulo,$campoBD,$presupuestoMuni){
                 <div class="caption text-left body-caption" >
                     <p style="color:white!important"><i
                             class="glyphicon glyphicon-file light-red lighter bigger-120"></i>
-                        &nbsp;Presupuesto:<?php echo number_format($r['PRESUPUESTO'],0)." ($p %)"; ?>
+                        &nbsp;Presupuesto:  &nbsp;<?php echo number_format($r['PRESUPUESTO'],0)." ($p %)"; ?>
                     </p>
                     <p style="color:white!important">
                         <i class="glyphicon glyphicon glyphicon-list-alt light-red lighter bigger-120"></i>
-                        &nbsp;&nbsp;Ejecución: <?php echo number_format($r['EJECUCION'],0); ?>
+                        &nbsp; Ejecución: &nbsp;<?php echo number_format($r['EJECUCION'],0); ?>
                     </p>
                     <?php if($campoBD=="FUNCION"){ ?>
                     <p style="color:white!important">
@@ -2103,8 +2103,8 @@ function resumenItem($lista,$titulo,$campoBD,$presupuestoMuni){
                     <?php }?>
 
                 </div>
-                <div class="caption card-footer text-center ">
-                    <ul class="list-inline footer-caption" style="color:white!important">
+                <div class="caption card-footer text-center footer-caption ">
+                    <ul class="list-inline " style="color:white!important">
                         <li> <i class="glyphicon glyphicon-signal light-red lighter bigger-120"></i>&nbsp; Avance: </li>
                         <li></li>
                         <li> <?php echo $r['AVANCE']." %"; ?></li>

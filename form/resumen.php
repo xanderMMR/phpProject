@@ -81,13 +81,6 @@ and open the template in the editor.
             flex-direction: row;
             justify-content: flex-end;
         }
-
-
-        @media (min-width: 1200px) {
-            .botonSalir {
-                font-size: 1em;
-            }
-        }
     </style>
 
     <style>
@@ -269,8 +262,7 @@ and open the template in the editor.
         .divanio {
             background: #39658E !important;
             border-radius: 20px;
-            width: 30%;
-            height: auto;
+            width: 100%;
             font-family: 'Cabin', Helvetica, Arial, Lucida, sans-serif;
             font-weight: bold;
             color: white !important;
@@ -298,11 +290,30 @@ and open the template in the editor.
         }
 
         .detalle-imagen {
-            height: 300px;
+            /* height: 300px; */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .header-label {
+            font-size: 2.5em;
+        }
+
+        .body-caption {
+            font-size: 2.3em;
+        }
+
+        .footer-caption {
+            font-size: 2.3em;
+        }
+
+        .card-content {
+            width: 90%;
         }
 
         .header-caption {
-            height: 50% !important
+            height: 50%;
         }
 
         .divTituloResumen {
@@ -337,7 +348,8 @@ and open the template in the editor.
             margin-bottom: 3%;
         }
 
-        @media (min-width: 200px) and (max-width: 1023px) {
+
+        @media (min-width: 576px) {
             .container {
                 min-width: 100%;
 
@@ -402,9 +414,38 @@ and open the template in the editor.
             .btn-descarga {
                 font-size: 1.5em;
             }
+
+            .divanio {
+                width: 40%;
+            }
         }
 
-        @media (min-width: 1024px) {
+        @media (min-width: 768px) {
+            
+        }
+
+        @media (min-width: 992px) {
+            .detalle-imagen {
+                height: 300px;
+
+            }
+
+            .header-label {
+                font-size: 1.2em;
+            }
+
+            .body-caption {
+                font-size: 1.4em;
+                height: 35%;
+            }
+
+            .footer-caption {
+                font-size: 1.4em;
+            }
+
+        }
+
+        @media (min-width: 1200px) {
             .container {
                 min-width: 100%;
 
@@ -415,11 +456,11 @@ and open the template in the editor.
             }
 
             .body-caption {
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
 
             .footer-caption {
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
 
             .string-municipalidad {
@@ -430,6 +471,10 @@ and open the template in the editor.
                 font-size: 2.8em;
                 color: #fff;
 
+            }
+
+            .botonSalir {
+                font-size: 1em;
             }
 
         }
@@ -480,7 +525,7 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12">
                             <center>
                                 <div class="divanio">Año
                                     <?php echo $_GET['anio']; ?>
