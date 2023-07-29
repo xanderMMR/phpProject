@@ -130,7 +130,9 @@ table>tbody>tr>td {
 
 .botonSalir {
     font-size: 11px !important;
-    width: 150px !important;
+    background-color: #CD1818;
+    color: #eeeeee;
+    border-radius: 10px;
 }
 
 .watermark {

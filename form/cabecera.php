@@ -40,14 +40,14 @@
                     </div>
                 </ul>
             </div>
-            <label class="font-time">
+            <!-- <label class="font-time">
                 <?php date_default_timezone_set('America/Lima'); ?>
                 Fecha:
                 <?php echo date('d/m/Y') ?>
-            </label>
+            </label> -->
             <div class="reg">
                 <form method="POST" action="salir.php">
-                    <button class="btn btn-white botonSalir">
+                    <button class="btn  botonSalir">
                         <b>CERRAR SESIÓN</b>
                     </button>
                 </form>
@@ -61,10 +61,10 @@
 </html>
 
 
-<div class="hero-wrap" style="background-image: url('../images/Selva2.jpg');height: 450px!important"
+<div class="hero-wrap" style="background-image: url('../images/juas.jpg');height: 450px!important"
     data-stellar-background-ratio="0.5">
 
-    <div class="overlay"></div>
+    <div class=""></div>
     <div style="color:white!important;margin-left:20px;font-size:15px;font-weight:bold">
         <br><br><br><br>
         La información ha sido recogida de los aplicativos desarrollados por el Ministerio de Economía y Finanzas

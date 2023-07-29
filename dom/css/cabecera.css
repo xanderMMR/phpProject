@@ -30,9 +30,12 @@ body {
     margin-left: 1%;
 }
 .nav-item{
-    background-color: #002747;
+    background-color: #4E3636;
     width: auto;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: auto;
+    font-size: 0.8em;
 }
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin-right: 0px;
